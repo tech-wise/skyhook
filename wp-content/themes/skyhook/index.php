@@ -96,7 +96,7 @@
 	<section class="technicians" id="technicians">
 		<div class="container">
 			<div class="row justify-content-between">
-				<div class="col-md-6 technicians-img technicians-text order-last">
+				<div class="col-md-6 technicians-img  order-last">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/technicians.png">
 					<a href="#" class="d-md-none">Learn More</a>
 				</div>
@@ -169,14 +169,21 @@
 			<div class="row justify-content-center">
 				<div class="col-md-12 about-text text-md-center">
 					<h1>About Skyhook</h1>
-					<p>Skyhook.is is a service that enables you to manage all your recent aviation experience, continuous requirements, licenses, certificates and much more. Their service also allows you to produce professional reports easily. Skyhook.is was founded in 2010, but the idea initially began in 2008 when they noticed the lack of a good online solution for thenewly established EASA regulations in regards to individual requirements for Aviation Technicians and their licenses. They launched in June 2011.</p>
+					<p class="about-mobile">Skyhook.is is a service that enables you to manage all your recent aviation experience, continuous requirements, 
+					licenses, certificates and much more. Their service also allows you to produce professional reports easily. 
+					Skyhook.is was founded in 2010, but the idea initially began in 2008 when they noticed the lack of a good online 
+					solution for thenewly established EASA regulations in regards to individual requirements for Aviation Technicians 
+					and their licenses. They launched in June 2011.</p>
+					<!--<div class="about-mobile">-->
+					<!--	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aboutt-girl-mob.png">-->
+					<!--</div>-->
 				</div>
 				<div class="col-lg-8 col-md-11 text-center about-video">
 					<iframe src="https://www.youtube.com/embed/EngW7tLk6R8"></iframe>
 				</div>
 				<div class="col-md-12 text-center about-btn">
 					<a href="#">Start Free Trial</a>
-					<div class="about-img">
+					<div class="about-img about-desktop">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/about-img.png">
 					</div>
 				</div>

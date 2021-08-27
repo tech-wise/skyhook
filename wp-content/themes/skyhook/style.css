@@ -151,9 +151,9 @@ header .menu ul li#mega-menu-item-19 a {
 }
 header .menu ul li#mega-menu-item-17 ,
 header .mob-num a {
-  padding-left: 30px !important;
+  padding-left: 25px !important;
   background: url('images/phone.png') no-repeat center left !important;
-  margin-left: 60px !important;
+  margin-left:55px !important;
 }
 header .mob-num a {
     margin-left: 0 !important;
@@ -178,7 +178,12 @@ header .mob-num a {
   position: absolute;
   right: 0px;
   top: 40px;
-  box-shadow: 0px 0px 10px 10px #e4e5e6;
+  /*box-shadow: 0px 0px 10px 10px #e4e5e6;*/
+}
+.main-banner .banner-img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
 .main-banner .banner-text h5 {
   font-size: 24px;
@@ -394,15 +399,24 @@ header .mob-num a {
 }
 .testimonials .carousel-indicators li ,
 .our-customer .carousel-indicators li {
-  background-color: #EBEBEB;
-  padding: 5px;
-  margin: 0 3px;
-  border-radius: 10px;
-  cursor: pointer;
+  background-color: #EBEBEB !important;
+  padding: 5px !important;
+  margin: 0 3px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+}
+.testimonials .carousel-indicators li {
+   
+    width:auto !important;
+    height: auto !important;
+    border-top:unset !important;
+    border-bottom: unset !important;
+  
+  
 }
 .testimonials .carousel-indicators li.active ,
 .our-customer .carousel-indicators li.active{
-  background-color: #5939CF;
+  background-color: #5939CF !important;
 }
 .our-customer .carousel-indicators {
     bottom: -30px;
@@ -469,13 +483,22 @@ header .mob-num a {
 .free-trail .project-software .free-trail-btn a{
   background-color: #fff;
   padding: 15px 25px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   color: #5235BF;
   font-family: 'Montserrat-Medium';
-  font-size: 25px;
+  font-size: 23px;
 }
-
+.testimonials .sr-only {
+    position: absolute;
+    width: auto !important;
+    height: auto !important;
+    padding: 0;
+    overflow: hidden;
+    clip: auto !important;
+    white-space: nowrap;
+    border: 0;
+}
 /* Entries info free trail section end*/
 
 
@@ -617,7 +640,9 @@ footer .footer-bottom .social-links ul {
 	color: #003452;
 	font-family: 'Montserrat-Medium';
 }
-
+.about-mobile{
+    background-image:unset;   
+}
 
 /*Learn Page CSS End*/
 
@@ -642,92 +667,119 @@ footer .footer-bottom .social-links ul {
   }
 }
 @media(max-width: 1279.98px){
-  .container {
-    max-width: 95%;
-  }
-
-  header .menu {
+    .container {
+        max-width: 95%;
+    }
+    header .menu {
       margin-top: 8px;
-  }
-  header .menu ul li a {
-    padding: 0 4px !important;
-    font-size: 14px !important;
-  }
-  header .menu ul li#mega-menu-item-17 {
-    padding-left: 30px !important;
-    margin-left: 30px !important;
-  }
-  header .menu ul li#mega-menu-item-18 ,
-  header .menu ul li#mega-menu-item-19 {
-    padding: 0 6px !important;
-  }
-  .main-banner {
+    }
+    header .menu ul li a {
+        padding: 0 4px !important;
+        font-size: 14px !important;
+    }
+    header .menu ul li#mega-menu-item-17 {
+        padding-left: 30px !important;
+        margin-left: 30px !important;
+    }
+    header .menu ul li#mega-menu-item-18 ,
+    header .menu ul li#mega-menu-item-19 {
+        padding: 0 6px !important;
+    }
+    .main-banner {
     padding: 70px 0 120px;
-    background-position: bottom center;
-  }
-  .main-banner .banner-img img {
-    width: 50%;
-  }
-  .main-banner .banner-text h1 {
-      font-size: 42px;
-  }
-  .banner-logos .logos ul li {
-    width: 15%;
-    margin: 0 5px;
-    text-align: center
-  }
-  .technicians .technicians-text h1, 
-  .part-145 .part-145-text h1, 
-  .aoc .aoc-text h1 {
-      font-size: 40px;
-  }
-  .part-145 {
-    padding-bottom: 160px;
-  }
-  .part-145 .text-img img {
-    bottom: -150px;
-    right: -100px;
-  }
-  .aoc .text-img img {
-    right: -20px;
-    bottom: -165px;
-  }
-  .aoc {
-    padding-bottom: 170px;
-  }
-  .testimonials .carousel-item {
-    padding: 30px;
-  }
-  .free-trail .project-software .free-trail-btn a {
-    font-size: 20px;
-    padding: 15px;
-  }
-  .free-trail .project-software h1 {
-    font-size: 35px;
-  }
-  .entries-info .entry p {
-    padding: 0 30px;
-  }
-  .entries-info .entry h1 {
-    font-size: 55px;
-  }
-  .entries-info .plane img {
-    bottom: 30px;
-  }
-  .free-trail {
-    margin-top: -80px;
-  }
-  footer .footer-top .others {
-      padding-left: 30px;
-  }
-  footer .footer-top .list li a {
-    font-size: 17px;
-  }
-  footer .footer-top .solution {
-    padding-left: 12px;
-  }
+        background-position: bottom center;
+    }
+    .main-banner .banner-img img {
+        width: 50%;
+    }
+    .main-banner .banner-text h1 {
+        font-size: 42px;
+    }
+    .banner-logos .logos ul li {
+        width: 15%;
+        margin: 0 5px;
+        text-align: center
+    }
+    .technicians .technicians-text h1, 
+    .part-145 .part-145-text h1, 
+    .aoc .aoc-text h1 {
+        font-size: 40px;
+    }
+    .part-145 {
+        padding-bottom: 160px;
+    }
+    .part-145 .text-img img {
+        bottom: -150px;
+        right: -100px;
+    }
+    .aoc .text-img img {
+        right: -20px;
+        bottom: -165px;
+    }
+    .aoc {
+        padding-bottom: 170px;
+    }
+    .testimonials .carousel-item {
+        padding: 30px;
+    }
+    .free-trail .project-software .free-trail-btn a {
+        font-size: 20px;
+        padding: 15px;
+    }
+    .free-trail .project-software h1 {
+        font-size: 35px;
+    }
+    .entries-info .entry p {
+        padding: 0 30px;
+    }
+    .entries-info .entry h1 {
+        font-size: 55px;
+    }
+    .entries-info .plane img {
+        bottom: 30px;
+    }
+    .free-trail {
+        margin-top: -80px;
+    }
+    footer .footer-top .others {
+        padding-left: 30px;
+    }
+    footer .footer-top .list li a {
+        font-size: 17px;
+    }
+    footer .footer-top .solution {
+        padding-left: 12px;
+    }
+    header .menu ul li#mega-menu-item-17 {
+        padding-left: 30px !important;
+        margin-left: 90px !important;
+    }
+    .main-banner .banner-img img {
+        width: 90%;
+    }
 }
+@media (max-width: 1151px){
+    
+    header .menu ul li#mega-menu-item-17 {
+        padding-left: 30px !important;
+        margin-left: 20px !important;
+    }
+    .testimonials .customer-text h5 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1023px){
 
+    .free-trail .project-software .free-trail-btn a {
+        font-size: 19px;
+        padding: 12px 8px;  
+        border-radius: 5px;
+    }
+    .main-banner {
+        padding: 40px 0 120px;
+        background-position: bottom center;
+    }
+}
 @media(max-width: 991.98px) {
   #mega-menu-wrap-primary .mega-toggle-animated {
     margin-top: 10px !important;
@@ -822,11 +874,11 @@ footer .footer-bottom .social-links ul {
     bottom: 60px;
   }
   .free-trail .project-software .free-trail-btn a {
-    font-size: 15px;
-    padding: 15px 10px;
+    font-size: 13px;
+    padding: 15px 8px;
   }
   .free-trail .project-software h1 {
-    font-size: 27px;
+    font-size: 24px;
   }
   footer .footer-top .company {
     padding-left: 12px;
@@ -841,6 +893,9 @@ footer .footer-bottom .social-links ul {
   footer .footer-top {
     padding-top: 125px;
   }
+  .testimonials .carousel-control-prev span img, .testimonials .carousel-control-next span img {
+        display:none;    
+    }
 }
 @media(max-width: 767.98px){
   .covid .text span {
@@ -904,9 +959,9 @@ footer .footer-bottom .social-links ul {
     top: 125px;
   }
   .about .about-text p {
-      padding-right: 100px;
-	  line-height: 1.7;
-	  font-size: 14px;
+    padding-right:0px;
+    line-height: 1.7;
+    font-size: 20px;
   }
   .part-145 {
     padding-bottom: 50px;
@@ -969,6 +1024,71 @@ footer .footer-bottom .social-links ul {
   .entries-info .entry p {
     font-size: 20px;
   }
+    .main-banner .banner-img {
+        position: relative;
+        right: -11px;
+        top: 15px;
+        padding-right: 0px;
+    }
+    .banner-logos .carousel-indicators li {
+        width: auto !important;
+        height: auto !important;
+        border-top: unset !important;
+        border-bottom: unset !important;
+    }
+    .our-customer .carousel-indicators {
+        bottom: -50px;
+    }
+    .technicians .technicians-text{
+        order: 1;
+        background: url(images/text-img-mbl.png) no-repeat;
+        background-size: contain;
+        background-position: right top;
+    }
+    .technicians-img a {
+        background-color: #5939CF;
+        margin-top: 30px;
+        display: inline-block;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-family: 'Montserrat-Medium';
+        z-index: 1;
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .technicians-text.order-md-last {
+        padding-right: 120px;
+    }
+    .technicians .technicians-text {
+        background-size: 46%;
+        background-position: right top;
+        margin-bottom: 35px;
+    }
+    /*.about-mobile{*/
+    /*    display:block;   */
+    /*}*/
+    .about-img{
+        display:none;   
+    }
+    /*.about-mobile {*/
+    /*    position: absolute;*/
+    /*    right: 0;*/
+    /*    top: 65px;*/
+    /*    width: 24%;*/
+    /*}*/
+    /*.about-mobile{*/
+    /*    background:url('images/aboutt-girl-mob.png');*/
+    /*    background-repeat:no-repeat;*/
+    /*    background-position:right bottom;*/
+    /*    background-size: 170px;*/
+    /*}*/
+    /*.about .about-text p {*/
+    /*    padding-right: 140px;*/
+    /*    line-height: 1.7;*/
+    /*    font-size: 18px;*/
+    /*}*/
 }
 @media(max-width: 575.98px){
   .covid .text {
@@ -1045,7 +1165,7 @@ footer .footer-bottom .social-links ul {
   }
   footer .social-links ul {
       margin: 20px auto;
-      width: 52%;
+      width:47%;
   }
   footer .social-links ul li{
       margin: 0 5px 20px;
@@ -1075,8 +1195,34 @@ footer .footer-bottom .social-links ul {
   footer .footer-bottom .copyright p a {
     display: none;
   }
+  footer .footer-top {
+        background-image: unset;
+        background-color: #363636;
+    }
+    /*.about-mobile {*/
+    /*    position: absolute;*/
+    /*    right: 0;*/
+    /*    width:30%;*/
+    /*    top: 195px;*/
+    /*}*/
+  
 }
 
+@media (max-width: 410px){
+    .technicians-text.order-md-last {
+        padding-right:100px;
+    }
+    .technicians .technicians-text h1, .part-145 .part-145-text h1, .aoc .aoc-text h1 {
+        font-size: 21px;
+    }
+    .about .about-text p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 374px){
+
+
+}
 @media(max-width: 359.98px){
   .testimonials h1 {
     font-size: 23px;
@@ -1090,4 +1236,10 @@ footer .footer-bottom .social-links ul {
   header .mob-num a {
     font-size: 12px;
   }
+    .part-145 .text-img img {
+        top: 10px;
+        width: 216px;
+        right: -114px;
+        z-index: -1;
+    }
 }
