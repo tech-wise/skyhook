@@ -4,7 +4,7 @@
 	<section class="main-banner">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 banner-text">
+				<div class="col-md-6 banner-text skyhook-primary-button">
 					<h5>For Professionals</h5>
 					<h1>All-in-one Project Management Software</h1>
 					<p>Optimize your workflows by harmonizing your planning, administration, and reporting processes.
@@ -25,12 +25,12 @@
 			<div class="row d-none d-md-block">
 				<div class="col-md-12 logos">
 					<ul>
-						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-1.png"></li>
-						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-2.png"></li>
-						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-3.png"></li>
-						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-4.png"></li>
-						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-5.png"></li>
-						<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-6.png"></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-1.png"></a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-2.png"></a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-3.png"></a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-4.png"></a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-5.png"></a></li>
+						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-6.png"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -48,26 +48,26 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                       </ol>
-                      <div class="carousel-inner">
+                    <div class="carousel-inner">
                         <div class="carousel-item text-center active">
-                          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-1.png">
+                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-1.png"></a>
                         </div>
                         <div class="carousel-item text-center">
-                          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-2.png">
+                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-2.png"></a>
                         </div>
                         <div class="carousel-item text-center">
-                          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-3.png">
+                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-3.png"></a>
                         </div>
                         <div class="carousel-item text-center">
-                          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-4.png">
+                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-4.png"></a>
                         </div>
                         <div class="carousel-item text-center">
-                          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-5.png">
+                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-5.png"></a>
                         </div>
                         <div class="carousel-item text-center">
-                          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-6.png">
+                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-6.png"></a>
                         </div>
-                      </div>
+                    </div>
                     </div>
 	            </div>
 			</div>
@@ -100,7 +100,7 @@
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/technicians.png">
 					<a href="#" class="d-md-none">Learn More</a>
 				</div>
-				<div class="col-lg-5 col-md-6 technicians-text order-md-last">
+				<div class="col-lg-5 col-md-6 technicians-text order-md-last skyhook-primary-button skyhook-primary-para">
 					<h5><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png"> Skyhook for Technicians</h5>
 					<h1>Structure Your Work, Clutter-Free</h1>
 					<p>With folders and subfolders, you’ll be able to create an infinite structure within your boards
@@ -116,7 +116,7 @@
 	<section class="part-145" id="part-145">
 		<div class="container">
 			<div class="row justify-content-between">
-				<div class="col-md-6 col-9 part-145-text">
+				<div class="col-md-6 col-9 part-145-text skyhook-primary-button">
 					<h5><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png"> Skyhook for Part-145</h5>
 					<h1>Customize Your Entire Workflow to Your Liking</h1>
 					<p>Organize data in a variety of ways by filtering, sorting, and grouping it. You can also decide
@@ -126,7 +126,7 @@
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/part-145-text.png">
 					</div>
 				</div>
-				<div class="col-lg-5 col-md-6 part-145-text part-145-img">
+				<div class="col-lg-5 col-md-6 part-145-text part-145-img skyhook-primary-button skyhook-primary-para">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/part-145.png">
 					<a href="#" class="d-md-none">Learn More</a>
 				</div>
@@ -139,11 +139,11 @@
 	<section class="aoc" id="aoc">
 		<div class="container">
 			<div class="row justify-content-between">
-				<div class="col-md-6 aoc-text aoc-img text-center order-2">
+				<div class="col-md-6 aoc-text aoc-img text-center order-2 skyhook-primary-button">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/AOC.png">
 					<a href="#" class="d-md-none">Learn More</a>
 				</div>
-				<div class="col-lg-5 col-md-6 aoc-text order-md-2">
+				<div class="col-lg-5 col-md-6 aoc-text order-md-2 skyhook-primary-para">
 					<h5><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png"> Skyhook for AOC’s</h5>
 					<h1>Work together to explore & grow your product.</h1>
 					<div class="text-img d-md-none">

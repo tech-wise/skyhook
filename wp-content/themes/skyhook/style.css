@@ -10,7 +10,6 @@ Theme Description: This theme is developed by Technology Wisdom Team.
   font-family: 'Montserrat-Light';
   src: url('./fonts/Montserrat-Light.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'Montserrat-Regular';
   src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
@@ -23,7 +22,7 @@ Theme Description: This theme is developed by Technology Wisdom Team.
 
 @font-face {
   font-family: 'Montserrat-Semibold';
-  src: url('./fonts/Montserrat-Semibold.ttf') format('truetype');
+  src: url('./fonts/Montserrat-SemiBold.otf') format('truetype');
 }
 
 @font-face {
@@ -34,7 +33,10 @@ Theme Description: This theme is developed by Technology Wisdom Team.
   font-family: 'Volte-Light';
   src: url('./fonts/Volte-Light.otf') format('truetype');
 }
-
+@font-face {
+  font-family: 'Volte-Regular';
+  src: url('./fonts/Volte-Regular.ttf') format('truetype');
+}
 @font-face {
   font-family: 'Volte-Medium';
   src: url('./fonts/Volte-Medium.otf') format('truetype');
@@ -48,6 +50,22 @@ Theme Description: This theme is developed by Technology Wisdom Team.
 @font-face {
   font-family: 'Volte-Bold';
   src: url('./fonts/Volte-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'GalanoGrotesque-Bold';
+  src: url('./fonts/GalanoGrotesque-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'GalanoGrotesque-Medium';
+  src: url('./fonts/GalanoGrotesque-Medium.otf') format('truetype');
 }
 
 
@@ -92,7 +110,6 @@ a, button, input[type="submit"] {
 }
 
 a:hover, button:hover, input[type="submit"]:hover {
-  opacity: 0.8!important;
   text-decoration: none!important;
   transition: all 0.5s ease!important;
 }
@@ -115,6 +132,9 @@ ul {
 }
 .covid .container {
   position: relative;
+}
+.covid .text span {
+	font-size: 15px;
 }
 .covid .text a {
   position: absolute;
@@ -141,7 +161,7 @@ header .menu ul li#mega-menu-item-18 {
   padding: 0 10px !important;
 }
 header .menu ul li#mega-menu-item-19 {
-  background-color: #5939CF !important;
+  background-color: #00628C !important;
   margin-left: 10px !important;
   border-radius: 7px !important;
   padding: 0 10px !important;
@@ -165,6 +185,9 @@ header .mob-num a {
   color: #5939CF !important;
   font-family: 'Montserrat-Bold' !important;
 }
+header #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover {
+        color: #fff !important;
+    }
 /*Header CSS*/
 
 /*Banner Section Start*/
@@ -197,16 +220,12 @@ header .mob-num a {
 .main-banner .banner-text p {
   font-size: 22px;
 }
-.main-banner .banner-text a ,
-.technicians .technicians-text a ,
-.part-145 .part-145-text a ,
-.aoc .aoc-text a ,
-.why-skyhook .work-text a ,
-.customer-stories .stories-btn a {
-  background-color: #5939CF;
+.skyhook-primary-button form input[type="submit"] ,
+.skyhook-primary-button a{
+  background-color: #00628C;
   margin-top: 30px;
   display: inline-block;
-  color: #fff;
+  color: #fff !important;
   border-radius: 5px;
   padding: 10px 20px;
   font-family: 'Montserrat-Medium';
@@ -215,12 +234,25 @@ header .mob-num a {
 }
 .banner-logos {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   padding-bottom: 30px;
 }
 .banner-logos .logos ul li {
   display: inline-block;
   margin: 0 6px;
+}
+.banner-logos .logos img{
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	will-change: transform;
+	transition: transform 700ms;
+}
+.banner-logos .logos img:hover{
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	transform: scale(1.04) translateY(-4px); 
+	z-index: 1; 
+	transition: transform 500ms;
 }
 /*Banner Section End*/
 
@@ -252,24 +284,15 @@ header .mob-num a {
 .technicians {
   padding: 100px 0 70px;
 }
-.technicians .technicians-text h5 ,
-.part-145 .part-145-text h5 ,
-.aoc .aoc-text h5 ,
-.why-skyhook .work-text h5 {
+.skyhook-primary-para h5 {
   font-family: 'Volte-Medium';
   font-size: 18px;
 }
-.technicians .technicians-text h1 ,
-.part-145 .part-145-text h1 ,
-.aoc .aoc-text h1 ,
-.why-skyhook .work-text h1 {
+.skyhook-primary-para h1 {
   font-size: 50px;
   line-height: 1;
 }
-.technicians .technicians-text p ,
-.part-145 .part-145-text p ,
-.aoc .aoc-text p ,
-.why-skyhook .work-text p {
+.skyhook-primary-para p {
   font-size: 19px;
 }
 /*Technicians Section End*/
@@ -520,6 +543,9 @@ footer .footer-top .list li a ,
 footer .footer-top .list h5 {
   color: #fff;
 }
+footer .footer-top .list ul{
+	margin-top:20px;
+}
 footer .footer-top .info-text p {
   font-family: 'Montserrat-Medium';
   font-size: 17px;
@@ -536,7 +562,7 @@ footer .footer-top .company{
   padding-left: 60px;
 }
 footer .footer-top .others{
-  padding-left: 45px;
+  padding-left: 40px;
 }
 footer .footer-top .solution{
   padding-left: 58px;
@@ -551,6 +577,13 @@ footer .footer-top .list li a {
   font-size: 18px;
   line-height: 34px;
 }
+footer .footer-top .list li a:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+footer .footer-top .mobile-social-icon{
+    display: none;
+}
 
 
 /* Fotter Bottom start*/
@@ -561,6 +594,10 @@ footer .footer-bottom {
   font-size: 16px;
   font-family: 'Poppins-Regular';
 }
+footer .footer-bottom .copyright p{
+  font-size: 20px;
+  margin-top: 8px;
+}
 footer .footer-bottom .copyright p a{
   color: #fff;
 }
@@ -570,6 +607,15 @@ footer .social-links ul li{
 }
 footer .footer-bottom .social-links ul {
     float: right;
+	margin-top: 6px;
+}
+footer .footer-bottom .social-links ul li a i{
+	font-size: 30px;
+	color: #fff;
+}
+.fab.fa-facebook-square:hover, .fab.fa-twitter-square:hover{
+	transform: scale(1.1);
+    transition-duration: 0.4s;
 }
 /* footer bottom end*/
 
@@ -594,10 +640,10 @@ footer .footer-bottom .social-links ul {
 .help-center .heading h2 ,
 .customer-stories .heading h2 {
 	font-size: 45px;
-	margin-bottom: 50px;
+	margin-bottom: 15px;
 }
 .help-center .box {
-	box-shadow: 0 0 10px 15px #f6f6f6;
+	box-shadow: 3px 15px 9px 7px #f6f6f6;
     padding: 50px 40px;
     height: 90%;
     margin: 15px 0;
@@ -610,7 +656,10 @@ footer .footer-bottom .social-links ul {
 }
 .help-center .box p {
     font-size: 19px;
-	color: #A2AEB7;
+    color: #A2AEB7;
+    font-family: 'Poppins-Regular';
+    line-height: 27px;
+    padding: 0 19px;
 }
 .why-skyhook .text-img img {
 	float: right;
@@ -620,34 +669,543 @@ footer .footer-bottom .social-links ul {
     margin-right: 5px;
     margin-top: -2px;
 }
-.why-skyhook .work-text a{
-	box-shadow: 0 10px 10px 10px #f4f4f4;
+.why-skyhook .work-text a {
+    box-shadow: 0 10px 10px 10px #f4f4f4;
+    font-family: 'Montserrat-Regular';
 }
-
+.why-skyhook .work-text p {
+    font-family: 'Montserrat-Medium';
+    line-height: 32px;
+}
 .customer-stories {
 	padding: 80px 0;
 	background-color: #F5F8FA;
 }
 .customer-stories .stories-box {
-	box-shadow: 0 0 10px 5px #f6f6f6;
-    padding: 20px 40px 40px;
-    margin: 30px 0;
+    box-shadow: 0 0 10px 5px #f6f6f6;
+    padding: 10px 27px 23px;
+    margin: 20px 0;
     border-radius: 10px;
-	background-color: #fff;
+    background-color: #fff;
 }
 .customer-stories .stories-box p {
-	margin-top: 15px;
-	color: #003452;
-	font-family: 'Montserrat-Medium';
+    margin-top: 15px;
+    color: #003452;
+    font-family: 'Poppins-Regular';
+    font-size: 17px;
+    line-height: 26px;
 }
 .about-mobile{
     background-image:unset;   
 }
+.box:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+/*Easa-guide css start*/
+/* .easa-guide{
+    padding: 90px 0px;
+}
+.easa-guide .heading h1 {
+	font-size: 45px;
+	margin-bottom: 25px;
+}
+.box:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+.easa-guide .box{
+  box-shadow: 3px 11px 9px 9px #f6f6f6;
+  padding: 25px 35px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: 3px solid #fff0;
+}
+.box:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+.easa-guide .box:hover{
+  border: 3px solid #00628C;
+}
+.easa-guide .box a{
+  color: #000;
+  font-family: 'Poppins-Regular';
+  font-size: 20px;
+  display: block;
+} */
+
+/*Easa-guide section Css end*/
+
+/*Easa-guide css start*/
+.easa-guide{
+    padding: 80px 0px;
+}
+.easa-guide .heading h1 {
+	font-size: 45px;
+	margin-bottom: 25px;
+}
+.easa-guide .panel-heading {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px 10px #f6f6f6;
+}
+.easa-guide .panel-heading.active {
+  background-color: #00628C;
+  box-shadow: none;
+}
+.easa-guide .panel-heading.active .panel-title{
+  color:#fff;
+}
+.easa-guide .panel-title{
+	color: #1C4863;
+	margin-bottom: 0px;
+	font-family: 'Volte-Semibold';
+	font-size: 23px;
+}
+.easa-guide .panel.panel-default {
+    margin: 20px 0;
+}
+.easa-guide .panel-title img{
+	float: right;
+	margin-top: 10px;
+}
+.easa-guide .panel-heading .closed{
+  display:none;
+}
+.easa-guide .panel-heading.active .closed{
+  display:block;
+}
+.easa-guide .panel-heading.active .open{
+  display:none;
+}
+.easa-guide .panel-heading.open{
+  display:block;
+}
+.easa-guide .panel-body {
+  box-shadow: 0 10px 10px 10px #f6f6f6;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.easa-guide .panel-body p {
+	color: #5B7182;
+    font-family: 'Montserrat-Medium';
+    font-size: 19px;
+}
+/*Easa-guide section Css end*/
 
 /*Learn Page CSS End*/
 
+/*Contact Us Page Start*/
+.get-in-touch {
+  padding: 80px 0;
+  background: url('images/bg-contact.png') no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  margin-bottom: 120px;
+}
+.get-in-touch .form form {
+  box-shadow: 0 10px 15px 10px #e6e9eb;
+  text-align: center;
+  padding: 40px 30px 0px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.get-in-touch .form form input,
+.get-in-touch .form form textarea,
+.book-demo .form-text .form input,
+.book-demo .form-text .form select {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Montserrat-Regular';
+  color: #ADADAD;
+}
+.get-in-touch .text{
+  margin: 0 auto;
+}
+.get-in-touch .text h1 {
+  font-family: 'Volte-Semibold';
+  font-size: 54px;
+  line-height: 1;
+  color: #003452;
+  margin-top: 40px;
+}
+.get-in-touch .text h1 span {
+  color: #00628C;
+}
+.get-in-touch .text p {
+  font-size: 19px;
+  font-family: 'Poppins-Regular';
+	color: #6D8191;
+}
+.get-in-touch .text .get-in-touch-img img {
+  position: absolute;
+  bottom: -130px;
+  right: 30px;
+	
+}
+.get-in-touch .form form textarea {
+  height: 120px;
+}
+.get-in-touch .form form input[type="submit"] {
+    margin-top: 10px;
+    padding: 17px 20px;
+    border-radius: 11px;
+}
+.get-in-touch .form form input.name ,
+.book-demo .form-text .form input.f-name ,
+.book-demo .form-text .form input.l-name {
+  background: url(images/name.png) no-repeat;
+  background-position: right 15px center;
+}
+.get-in-touch .form form input.email ,
+.book-demo .form-text .form input.email {
+  background: url(images/mail.png) no-repeat;
+  background-position: right 15px center;
+}
+.get-in-touch .form form input.phone ,
+.book-demo .form-text .form input.phone {
+  background: url(images/phone-icon.png) no-repeat;
+  background-position: right 15px center;
+}
+.get-in-touch .form form textarea {
+  background: url(images/message.png) no-repeat;
+  background-position: right 15px top 15px;
+}
+.book-demo .form-text .form input.c-name {
+	background: url(images/company.png) no-repeat;
+  	background-position: right 10px top 8px;
+}
+
+.book-demo {
+	padding: 80px 0 250px;
+	position: relative;
+}
+.book-demo .form-text h2 {
+	font-size: 45px;
+  	font-family: 'Volte-Semibold';
+}
+.book-demo .form-text p {
+	font-size: 18px;
+	font-family: 'Montserrat-Medium';
+	margin-bottom: 30px;
+}
+.book-demo .form-text .form p {
+	margin-bottom: 0;
+	font-size: 17px;
+	font-family: 'Volte-Semibold';
+}
+.book-demo .form-text .form p:last-of-type{
+	margin-top: -45px;
+}
+.book-demo .fas.fa-angle-right{
+	color: #7C7C7C;
+	font-size: 20px;
+	position: absolute;
+	margin: 2px 0 0 5px;
+}
+.book-demo .form-text .form .f-name {
+	float: left;
+	width: 49%;
+}
+.book-demo .form-text .form .l-name {
+	float: right;
+	width: 49%;
+}
+.book-demo .form-text .form input[type="submit"] {
+    margin-top: 10px;
+    box-shadow: 0 5px 5px 5px #f4f4f4;
+    margin-bottom: 30px;
+    padding: 17px 20px;
+    border-radius: 10px;
+}
+.book-demo .form-img {
+	position: absolute;
+	right: 0;
+}
+.book-demo .form-img img {
+	width: 100%;
+	box-shadow: -10px 0px 25px 10px #eee;
+}
+.wpcf7-not-valid-tip {
+	font-family: 'Montserrat-Regular';
+}
+/*Contact Us Page End*/
+
+/* Pricing Page Start */
+.get-in-touch.pricing {
+	margin-bottom: 150px;
+	background: url('images/pricing-contact-bg.png') no-repeat;
+	background-position: bottom 101px left 200px;
+}
+.easa-guide.pricing {
+	background-color: #F5F8FA;
+}
+.easa-guide.pricing .box{
+	background-color: #fff;
+  box-shadow: 5px 9px 27px 9px #e0dede;
+}
+.easa-guide.pricing .heading h1 {
+	font-family: 'Volte-Semibold';
+}
+.price-banner {
+  padding: 20px 0px 10px 0px;
+}
+.price-banner .price-nav-tab{
+  align-self: center;
+}
+.price-banner .price-para{
+    padding-right: 0;
+    align-self: center;
+}
+.price-banner .price-para span{
+  font-family: 'Montserrat-Regular';
+  font-size: 18px;
+  float: right;
+  font-weight: bold;
+}
+.price-banner .price-tab{
+  padding-left: 8px;
+}
+.price-banner .price-tab ul{
+  list-style-type: none;
+}
+.price-banner .price-tab ul li {
+  float: left;
+  background-color: white;
+  margin: 0 3px;
+  border-radius: 5px;
+  border: 2px solid #fff0;
+}
+.price-banner .price-tab ul li a{
+  text-decoration: none;
+  display: block;
+  color: #595959;
+  text-align: center;
+  padding: 3px 29px;
+  font-size: 14px;
+  font-family: 'GalanoGrotesque-Medium';
+}
+.price-banner .price-tab ul li a span{
+  font-family: 'GalanoGrotesque-Bold';
+  color: #272727;
+  font-size: 19px;
+}
+.price-banner .price-tab li.active,
+.price-banner .price-tab li:hover
+{
+  border: 2px solid #00628C;
+  transform: scale(1);
+  transition-duration: 0.4s;
+}
 
 
+
+/* Pricing table Section End*/
+.pricing-table{
+  margin-top: 80px;
+}
+.pricing-table .card{
+  border: none;
+}
+.pricing-table .card-div .card1{ 
+  border: none; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  color: #000 !important;
+  will-change: transform;
+  transition: transform 700ms;
+}
+.pricing-table .access-div{ 
+  text-align: center;
+  border-radius: 11px;
+  background-color: #F5F8FA;
+  padding: 50px 0px;
+}
+.pricing-table .access-div h5{
+  font-size: 22px;
+  font-family: 'Volte-Semibold';
+  margin-bottom: 0px;
+}
+.pricing-table .access-div p{
+  font-size: 22px;
+  font-family: 'Volte-Regular';
+  color: #6C808F;
+  margin-top: -3px;
+}
+.pricing-table .card-div .card-body{
+  margin-top: 20px;
+}
+.pricing-table .price-div{
+  text-align: center;
+}
+.pricing-table .price-div .heading-para h5{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Volte-Semibold';
+  color: #003452;
+}
+.pricing-table .premium .price-div .eighty-number h5{
+  color: #5939cf;
+  font-size: 50px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  font-family: 'Volte-Semibold';
+}
+.pricing-table .premium .price-div .eighty-number p{
+  text-align: center;
+  font-size: 18px;
+  color: #3B637A;
+  margin-top: -11px;
+  font-family: 'Volte-Medium';
+}
+.pricing-table .price-div .heading-para p{
+  font-family: 'Volte-Regular';
+  font-size: 22px;
+  text-align: center;
+  color: #5939CF;
+  margin-top: 13px;
+  margin-bottom: 22px;
+}
+.pricing-table .business .estimate{
+  margin-top: 12px;
+}
+.pricing-table .business .estimate div{
+  padding: 1px 6px 0 2px;
+}
+.pricing-table .business .estimate .estimate-price p {
+    font-size: 27px;
+    font-family: 'Volte-Semibold';
+    color: #5939CF !important;
+    line-height: 17px;
+    text-align: right;
+}
+.pricing-table .business .estimate .estimate-price span{
+  font-size: 15px;
+  font-family: 'Volte-Medium';
+  color: #003452 !important;	
+  float: right;
+}
+.pricing-table .business .estimate .estimate-name p {
+  color: #5939CF !important;
+  font-size: 21px;
+  font-family: 'Volte-Regular';
+  float: left;
+  padding-left: 11px;
+}
+.pricing-table .business .progressbar input[type=range] {
+  width: 90%;
+}
+.pricing-table .business .progressbar input[type=range].styled-slider.slider-progress {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 19px + var(--ratio) * (100% - 19px));
+}
+
+.pricing-table .business .progressbar input[type=range].styled-slider::-moz-range-thumb {
+  width: 19px;
+  height: 19px;
+  border-radius: 16px;
+  background: #5939CF;
+  border: none;
+  box-shadow: none;
+}
+.pricing-table .business .progressbar input[type=range].styled-slider::-moz-range-track {
+  height: 6px;
+  border-radius: 9px;
+  background: #DDDDDD;
+  border: none;
+  box-shadow: none;
+}
+.pricing-table .business .progressbar input[type=range].styled-slider.slider-progress::-moz-range-track {
+  background: linear-gradient(#5939CF,#5939CF) 0/var(--sx) 100% no-repeat, #DDDDDD;
+}
+.pricing-table .list ul {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.pricing-table .list ul li {
+	background: url(images/tick-blue.png) no-repeat;
+  background-position: left top 12px;
+  padding: 8px 8px 0px 25px;
+  font-family: 'Volte-Medium';
+  font-size: 21px;
+  color: #979797;
+  line-height: 1.2;
+  background-size: 16px;
+  margin-top: 13px;
+}
+.pricing-table .divider{
+  width: 90%;
+  height: 2px;
+  background-color: #CCCCCC !important;
+  margin: 15px auto;
+}
+.pricing-table .get-button a{
+  background-color: #5939CF;
+  text-decoration: none;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 8px;
+  font-family: 'Montserrat-Semibold';
+  font-size: 17px;
+  display: block;
+  margin: 30px 18px;
+}
+.pricing-table .card-div .card1:hover,
+.pricing-table .active{
+    transform: scale(1.04) translateY(-4px); 
+    z-index: 1; 
+    border-bottom: 0 none;
+    transition: transform 500ms;
+}
+.pricing-table .card-div .card1:hover .access-div,
+.pricing-table .card-div .card1:hover .access-div p,
+.pricing-table .active .access-div,
+.pricing-table .active .access-div p{
+  background-color: #5939CF;
+  color: #ffffff !important;
+}
+.pricing-table .not-lose{
+  margin:  50px auto 150px auto;
+}
+.pricing-table .not-lose p {
+  text-align: center;
+  font-family: 'Poppins-Regular';
+  font-size: 17px;
+  line-height: 32px;
+  color: #25516B;
+}
+.pricing-table .not-lose p span{
+  color: #197197;
+  font-family: 'Poppins-SemiBold';
+}
+/* Pricing tabs End */
+
+/* Pricing Page Start */
+
+/*footer social icon start*/
+.mobile-social-icon ul li {
+    display: inline;
+    margin:10px 5px;
+}
+.fab.fa-facebook-square,.fab.fa-twitter-square{
+    color: #fff;
+    font-size: 45px;
+}
+footer .footer-top .info-text p {
+    margin-bottom: 20px;
+}
+/*footer social icon end*/
 
 @media(min-width: 1440px){
     .entries-info {
@@ -659,6 +1217,12 @@ footer .footer-bottom .social-links ul {
 	.main-banner{
 	    background-size: cover;
 		background-position: bottom right;
+	}
+	.book-demo .form-img {
+		top: 0;
+	}
+	.pricing-table {
+    margin-top: 100px;
 	}
 }
 @media(min-width: 1280px){
@@ -673,6 +1237,9 @@ footer .footer-bottom .social-links ul {
     header .menu {
       margin-top: 8px;
     }
+	#mega-menu-wrap-primary #mega-menu-primary{
+		text-align: right !important;
+	}
     header .menu ul li a {
         padding: 0 4px !important;
         font-size: 14px !important;
@@ -748,7 +1315,7 @@ footer .footer-bottom .social-links ul {
         font-size: 17px;
     }
     footer .footer-top .solution {
-        padding-left: 12px;
+        padding-left: 50px;
     }
     header .menu ul li#mega-menu-item-17 {
         padding-left: 30px !important;
@@ -757,8 +1324,56 @@ footer .footer-bottom .social-links ul {
     .main-banner .banner-img img {
         width: 90%;
     }
+	.help-center .box {
+    	padding: 50px 30px;
+	}
+	.easa-guide .box {
+    	padding: 23px 30px;
+    }
+    .easa-guide .box a {
+    	font-size: 17px;
+    }
+	.help-center .box p {
+    	padding: 0 11px;
+	}
+	.customer-stories .stories-box p {
+    	font-size: 15px;
+    }
+	    .price-banner .price-tab ul li a {
+      padding: 3px 20px;
+      font-size: 13px;
+    }
+    .price-banner .price-tab ul li a span {
+      font-size: 18px;
+    }
+    .price-banner .price-para span {
+      font-size: 17px;
+    }
+    .pricing-table .business .estimate .estimate-price p {
+      margin-right: 0px;
+    }
+    .pricing-table .business .estimate .estimate-name p {
+      font-size: 17px;
+      padding-left: 6px;
+    }
+    .pricing-table .business .estimate .estimate-price span {
+      font-size: 14px;
+      font-family: 'Volte-Medium';
+      color: #003452 !important;
+    }
+   .pricing-table .business .estimate .estimate-price p {
+      font-size: 25px;
+      font-family: 'Volte-Semibold';
+      color: #5939CF !important;
+      line-height: 17px;
+      margin-right: 8px;
+      text-align: right;
+    }
+    .get-in-touch.pricing {
+      background-position: bottom 100px left 20px;
+    }
 }
-@media (max-width: 1151px){
+@media (max-width: 1151.98px){
     
     header .menu ul li#mega-menu-item-17 {
         padding-left: 30px !important;
@@ -767,8 +1382,74 @@ footer .footer-bottom .social-links ul {
     .testimonials .customer-text h5 {
         font-size: 20px;
     }
+	.why-skyhook .text-img img {
+		width: 75%;
+    	margin-top: -40px;
+	}
+	.help-center .box p {
+		font-size: 16px;
+		padding: 0 0px;
+    }
+	.customer-stories .stories-box p {
+    	font-size: 16px;
+	}
+	.easa-guide .box a {
+      font-size: 15px;
+    }
+	    .price-banner .price-para span {
+      font-size: 14px;
+    }
+    .price-banner .price-tab ul li a {
+      padding: 2px 15px;
+      font-size: 12px;
+    }
+    .price-banner .price-tab ul li a span {
+      font-size: 18px;
+    }
+    .pricing-table .price-div .heading-para h5 {
+      font-size: 26px;
+    }
+    .pricing-table .price-div .heading-para p {
+      font-size: 20px;
+      margin-top: 8px;
+    }
+    .pricing-table .business .estimate .estimate-price p {
+      font-size: 23px;
+    }
+    .pricing-table .business .estimate .estimate-price span {
+      font-size: 13px;
+    }
+    .pricing-table .business .estimate .estimate-name p {
+      font-size: 16px;
+      padding-left: 2px;
+    }
+    .pricing-table .list li i {
+      color: #5E40D1;
+      font-size: 15px;
+      padding-top: 18px;
+    }
+    .pricing-table .list li {
+      font-size: 18px;
+      padding-top: 18px;
+    }
+    .pricing-table .premium .price-div .eighty-number p {
+      font-size: 15px;
+		margin-top: -10px;
+    }
+    .pricing-table .premium .price-div .eighty-number h5 {
+      font-size: 35px;
+    }
+    .pricing-table .list ul li {
+      font-size: 19px;
+    }
+    .pricing-table .business .estimate div {
+        padding: 1px 6px;
+    }
+    footer .footer-top .list li a {
+        font-size: 16px;
+    }
 }
-@media (max-width: 1023px){
+@media (max-width: 1023.98px){
 
     .free-trail .project-software .free-trail-btn a {
         font-size: 19px;
@@ -779,18 +1460,65 @@ footer .footer-bottom .social-links ul {
         padding: 40px 0 120px;
         background-position: bottom center;
     }
+	footer .footer-top .solution {
+		padding-left: 33px;
+	}
+	footer .footer-top .others {
+    	padding-left: 21px;
+	}
+	.easa-guide .box {
+      padding: 23px 25px;
+    }
+	.pricing-table .list ul li{
+      background-position: left top 10px;
+    }
+		.pricing-table .business .estimate div {
+    padding: 1px 5px;
+	}
+
 }
 @media(max-width: 991.98px) {
   #mega-menu-wrap-primary .mega-toggle-animated {
     margin-top: 10px !important;
   }
   header .menu ul {
-    position: absolute !important;
-    z-index: 1 !important;
-    width: 400px !important;
+    /*position: absolute !important;*/
+    /*z-index: 1 !important;*/
+    /*width: 400px !important;*/
     right: 0 !important;
-    padding: 5px 20px !important;
+    /*padding: 5px 20px !important;*/
   }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+        padding: 5px 20px 5px 20px !important;
+
+    }
+	#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner, #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before, #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after{
+		background-color: #00628C !important;
+	}
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover {
+        color: #00628c !important;
+    }
+	header #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover {
+    color: #00628c !important;
+}
+    .mega-sub-menu:hover:active li a {
+        padding-left: 19px !important;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+        line-height: 33px !important;
+        height: 43px !important;
+    }
+    ul.mega-sub-menu li {
+        padding-left: 15px !important;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item {
+        border-bottom: 1px solid rgba(15, 13, 13, 0.1) !important;
+    }
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item {
+        border-bottom: 1px solid #fff !important;
+        border-radius: 0px !important;
+    }
+    
   header .menu ul li a {
     color: #fff !important;
   }
@@ -884,18 +1612,151 @@ footer .footer-bottom .social-links ul {
     padding-left: 12px;
   }
   footer .footer-top .info-text p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: normal;
   }
   footer .footer-top .list {
     margin-top: 20px;
+	padding-left: 12px;
   }
+  footer .footer-top list li{
+    margin-top: 15px;
+  }	
   footer .footer-top {
     padding-top: 125px;
   }
+  footer .footer-top .solution {
+	padding-left: 13px;
+  }
+  footer .footer-bottom .copyright p {
+    font-size: 17px;
+  }	
+  footer .footer-top .list li a {
+    font-size: 14px;
+  }	
+	
   .testimonials .carousel-control-prev span img, .testimonials .carousel-control-next span img {
-        display:none;    
-    }
+    display:none;    
+  }
+  .help-center .box {
+	padding: 30px 20px;
+  }
+  .help-center .box img {
+	width: 65px;
+  }
+  .help-center .box h4 {
+	font-size: 18px;
+  }
+  .help-center .box p {
+    font-size: 13px;
+  }
+  .why-skyhook .work-text h1 {
+	font-size: 40px;
+  }
+  .why-skyhook .work-text p ,
+  .easa-guide .panel-body p {
+	font-size: 16px;	
+  }
+  .easa-guide .panel-body h4 {
+	font-size: 20px;
+  }
+  .why-skyhook .text-img img {
+	margin-right: -40px;
+  }
+  .customer-stories .stories-box {
+	padding: 20px 20px 30px;
+	margin-top: 0px;
+  }
+  .customer-stories .stories-box p {
+	font-size: 12px;
+  }
+  .book-demo .form-text h2 ,
+  .get-in-touch .text h1 {
+	font-size: 40px;
+  }
+  .easa-guide .box a {
+  	font-size: 12px;
+  }
+  .easa-guide .box {
+    padding: 19px 15px;
+    margin: 12px 0px;
+  }
+  .price-banner .price-para {
+    padding-right: 0;
+    float: left;
+    padding-left: 0;
+  }
+  .price-banner .price-tab {
+    padding-left: 1px;
+  }
+  .price-banner .price-tab ul li a {
+    padding: 1px 7px;
+    font-size: 11px;
+  }
+  .price-banner .price-tab ul li a span {
+    font-size: 16px;
+  }
+  .learn-banner h1 {
+    padding-left: 60px;
+  }
+  .pricing-table {
+    margin-top: 55px;
+  }
+  .pricing-table .access-div {
+    border-radius: 11px;
+    padding: 38px 0px;
+  }
+  .pricing-table .access-div h5 {
+    font-size: 19px;
+  }
+  .pricing-table .access-div p {
+    font-size: 19px;
+  }
+  .pricing-table .card-div .card-body {
+    margin-top: 7px;
+  }
+  .pricing-table .price-div .heading-para h5 {
+    font-size: 17px;
+  }
+  .pricing-table .price-div .heading-para p {
+    font-size: 17px;
+  }
+  .pricing-table .business .estimate {
+    margin-top: 6px;
+  }
+  .pricing-table .business .estimate div {
+    padding: 0px 0px;
+  }
+	.pricing-table .business .estimate .estimate-name p {
+		font-size: 12px;
+		padding-left: 9px;
+	}
+  .pricing-table .business .estimate .estimate-price p {
+    font-size: 15px;
+  }
+  .pricing-table .business .estimate .estimate-price span {
+    font-size: 11px;
+  }
+  .pricing-table .list ul li {
+    padding: 8px 0px 0px 20px;
+    font-size: 15px;
+    background-size: 15px;
+	  margin-top: 6px;
+  }
+  .pricing-table .divider {
+    margin: 10px auto;
+  }
+  .pricing-table .get-button a {
+    margin: 15px 10px;
+    padding: 8px 20px;
+  }	
+.pricing-table .list ul {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.pricing-table .not-lose {
+    margin: 50px auto 100px auto;
+}
 }
 @media(max-width: 767.98px){
   .covid .text span {
@@ -915,7 +1776,7 @@ footer .footer-bottom .social-links ul {
     z-index: -1;
   }
   .main-banner {
-    padding: 10px 0 20px;
+    padding: 10px 0 35px;
     background-color: #F5F8FA;
     background-size: contain;
   }
@@ -1018,6 +1879,12 @@ footer .footer-bottom .social-links ul {
   footer .footer-bottom {
     padding: 20px 0;  
   }
+  footer .footer-top .list {
+    padding-left: 25px;
+  }
+  footer .footer-top .list li a {
+    font-size: 17px;
+  }	
   .entries-info .entry h1 {
     font-size: 50px;
   }
@@ -1046,7 +1913,7 @@ footer .footer-bottom .social-links ul {
         background-position: right top;
     }
     .technicians-img a {
-        background-color: #5939CF;
+        background-color: #00628C;
         margin-top: 30px;
         display: inline-block;
         color: #fff;
@@ -1066,29 +1933,146 @@ footer .footer-bottom .social-links ul {
         background-position: right top;
         margin-bottom: 35px;
     }
-    /*.about-mobile{*/
-    /*    display:block;   */
-    /*}*/
+	.why-skyhook .text-img img {
+		margin: 20px 0;
+	}
     .about-img{
         display:none;   
     }
-    /*.about-mobile {*/
-    /*    position: absolute;*/
-    /*    right: 0;*/
-    /*    top: 65px;*/
-    /*    width: 24%;*/
-    /*}*/
-    /*.about-mobile{*/
-    /*    background:url('images/aboutt-girl-mob.png');*/
-    /*    background-repeat:no-repeat;*/
-    /*    background-position:right bottom;*/
-    /*    background-size: 170px;*/
-    /*}*/
-    /*.about .about-text p {*/
-    /*    padding-right: 140px;*/
-    /*    line-height: 1.7;*/
-    /*    font-size: 18px;*/
-    /*}*/
+	.learn-banner h1 {
+		font-size: 40px;
+		padding-left: 25px;
+	}
+	.help-center .heading h2, 
+	.customer-stories .heading h2 ,
+	.easa-guide .heading h1 {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+	.why-skyhook {
+		padding-bottom: 40px;
+	}
+	.easa-guide .panel-body p {
+		font-size: 14px;
+	}
+	.easa-guide .panel-title {
+		font-size: 16px;
+	}
+	.easa-guide .panel-title img {
+		display: none;
+		float: right;
+		margin-top: 3px;
+	}
+	.help-center {
+		padding: 50px 0;
+	}
+	.get-in-touch .text .get-in-touch-img img ,
+	.book-demo .form-img {
+		position: unset;
+		margin: 30px 0;
+	}
+	.get-in-touch {
+		margin-bottom: 0;
+		padding: 20px 0 50px;
+	}
+	.book-demo {
+		padding: 50px 0 130px;
+	}
+	.help-center .box p {
+	  font-size: 20px;
+	}
+	.help-center .box p {
+	  padding: 0 37px;
+	}
+	.customer-stories .stories-box p {
+	  font-size: 19px;
+	}
+	.easa-guide .box {
+      padding: 14px 31px;
+      margin: 15px auto;
+      width: 90%;
+    }
+	.easa-guide .box a {
+      font-size: 18px;
+	}
+    .price-banner .price-para span {
+    font-size: 18px;
+    margin-left: 60px;
+    float: unset;
+	}
+  .price-banner .price-tab {
+    padding-left: 55px;
+    margin: 10px 0px;
+  }  
+  .price-banner .price-tab ul li {
+    margin: 6px 2px;
+  }
+  .price-banner .price-tab ul li a {
+    padding: 1px 13px;
+    font-size: 13px;
+  }
+  .price-banner .price-tab ul li a span {
+    font-size: 21px;
+  }
+  .pricing-table .card-div{
+    width: 85%;
+    margin: 27px auto;
+  }
+  .pricing-table .access-div h5 {
+    font-size: 40px;
+  }
+  .pricing-table .access-div p {
+    font-size: 30px;
+  }
+  .pricing-table .access-div {
+    padding: 30px 0px;
+  }
+  .pricing-table .price-div .heading-para h5 {
+    font-size: 25px;
+  }
+  .pricing-table .price-div .heading-para p {
+    font-size: 22px;
+  }
+  .pricing-table .list ul li {
+    font-size: 21px;
+    padding: 8px 8px 0px 25px;
+    background-size: 16px;
+    background-position: left top 11px;
+  }
+
+  .pricing-table .get-button a {
+    margin: 15px 20px;
+    padding: 8px 20px;
+    font-size: 20px;
+  }
+  .pricing-table .premium .price-div .eighty-number h5 {
+    font-size: 50px;
+  }
+  .pricing-table .premium .price-div .eighty-number p {
+    font-size: 18px;
+  }
+  .pricing-table .business .estimate div {
+    padding: 3px 10px;
+  }
+  .pricing-table .business .estimate .estimate-name p {
+    font-size: 20px;
+    padding-left: 0px;
+  }
+  .pricing-table .business .estimate .estimate-price p {
+    font-size: 20px;
+  }
+  .pricing-table .business .estimate .estimate-price span {
+    font-size: 14px;
+  }
+	.get-in-touch .text {
+    margin: 0px auto 40px auto;
+	}
+	footer .footer-bottom .social-links ul{
+		margin-top: -26px;
+	}
+	.pricing-table .not-lose {
+		margin: 30px auto 80px auto;
+	}
 }
 @media(max-width: 575.98px){
   .covid .text {
@@ -1098,9 +2082,9 @@ footer .footer-bottom .social-links ul {
     font-size: 10px;
     display: inline-block;
   }
-  header .menu ul {
-    width: 300px !important;
-  }
+  /*header .menu ul {*/
+  /*  width: 300px !important;*/
+  /*}*/
   header .mob-num {
     padding: 0;
   }
@@ -1199,16 +2183,67 @@ footer .footer-bottom .social-links ul {
         background-image: unset;
         background-color: #363636;
     }
-    /*.about-mobile {*/
-    /*    position: absolute;*/
-    /*    right: 0;*/
-    /*    width:30%;*/
-    /*    top: 195px;*/
-    /*}*/
-  
+	.get-in-touch .form form {
+		padding: 15px;
+	}
+	.book-demo .form-text p, 
+	.get-in-touch .text p {
+		font-size: 16px;
+	}
+	.help-center .box p {
+  		padding: 0 15px;
+	}
+	.price-banner .price-para span {
+    font-family: 'Montserrat-Semibold';
+    font-size: 15px;
+    float: unset;
+    margin-left: 30px;
+  }
+  .price-banner .price-tab {
+    padding-left: 18px;
+    margin: 10px 0px;
+  }
+  .price-banner .price-tab ul li a {
+    padding: 1px 5px;
+    font-size: 13px;
+  }
+  .price-banner .price-tab ul li a span {
+    font-size: 18px;
+  }
+  .pricing-table .card-div {
+    width: 95%;
+  }
+  .pricing-table .business .estimate .estimate-price span {
+    font-size: 12px;
+  }
+  .pricing-table .business .estimate .estimate-name p {
+    font-size: 18px;
+  }
+  footer .footer-top .mobile-social-icon{
+    display: block;
+  }
+  footer .footer-top .list ul {
+    margin-top: 10px;
+  }
+  .pricing-table .not-lose {
+    margin: 25px auto 70px auto;
+	}
+	.pricing-table .card-div {
+    	margin: 27px auto;
+	}
+	.pricing-table .access-div h5 {
+    	font-size: 35px;
+	}
+	.pricing-table .access-div p {
+    	font-size: 26px;
+	}
+	.learn-banner h1 {
+    font-size: 40px;
+    padding-left: 15px;
+}
 }
 
-@media (max-width: 410px){
+@media (max-width: 413.98px){
     .technicians-text.order-md-last {
         padding-right:100px;
     }
@@ -1218,15 +2253,77 @@ footer .footer-bottom .social-links ul {
     .about .about-text p {
         font-size: 16px;
     }
+	footer .social-links ul {
+    	width: 50%;
+    }
+	.main-banner .banner-img {
+    	right: -8px;
+    }
+	
+	.book-demo .form-text h2, 
+	.get-in-touch .text h1 {
+		font-size: 35px;
+	}
+	.easa-guide .box {
+    	width: 100%;
+  	}
+	.price-banner .price-tab ul li a {
+    padding: 1px 4px;
+    font-size: 10px;
+  }
+  .price-banner .price-tab ul li a span {
+    font-size: 16px;
+  }
+  .pricing-table .access-div h5 {
+    font-size: 30px;
+  }
+  .pricing-table .access-div p {
+    font-size: 25px;
+  }
+  .pricing-table .access-div {
+    padding: 25px 0px;
+  }
+  .pricing-table .price-div .heading-para h5 {
+    font-size: 22px;
+  }
+  .pricing-table .price-div .heading-para p {
+    font-size: 20px;
+  }
+  .pricing-table .list ul li {
+    font-size: 18px;
+  }
+  .pricing-table .premium .price-div .eighty-number h5 {
+    font-size: 35px;
+  }
+  .pricing-table .premium .price-div .eighty-number p {
+    font-size: 13px;
+  }
+  .pricing-table .business .estimate div {
+    padding: 2px 10px;
+  }
+  .pricing-table .business .estimate .estimate-name p {
+    font-size: 15px;
+  }
+  .pricing-table .not-lose p {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .price-banner .price-tab {
+    padding-left: 15px;
+    }
 }
-@media (max-width: 374px){
-
-
+@media (max-width: 374.98px) {/* For 360 */
+	#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block {
+    	margin-right: 0px !important;
+	}
 }
 @media(max-width: 359.98px){
   .testimonials h1 {
     font-size: 23px;
   }
+   .testimonials .carousel-inner .customer-name h5{
+		font-size: 17px;
+	}	
   .free-trail .project-software h1 {
     font-size: 20px;
   }
@@ -1235,11 +2332,72 @@ footer .footer-bottom .social-links ul {
   }
   header .mob-num a {
     font-size: 12px;
-  }
-    .part-145 .text-img img {
+	}
+  .part-145 .text-img img {
         top: 10px;
         width: 216px;
         right: -114px;
         z-index: -1;
     }
+	#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block:only-child {
+		margin: 0 !important;
+	}
+  .main-banner .banner-img{
+   		position: absolute;
+    	right: 0px;
+    	top: 335px;
+   }
+  .main-banner {
+    	padding: 10px 0 235px;
+   }
+   .customer-stories .stories-box p {
+		font-size: 16px;
+   }
+	.customer-stories .heading h2{
+		font-size: 32px;
+   }
+   .help-center .box p {
+   		padding: 0 9px;
+   }
+	.price-banner .price-tab ul li a {
+    padding: 1px 4px;
+    font-size: 9px;
+  }
+  .price-banner .price-tab ul li a span {
+    font-size: 14px;
+  }
+  .pricing-table .list ul li {
+    font-size: 15px;
+    background-size: 14px;
+    background-position: left top 8px;
+  }
+  .pricing-table .business .estimate .estimate-price span {
+    font-size: 11px;
+  }
+  .pricing-table .business .estimate .estimate-name p {
+    font-size: 15px;
+  }
+  .pricing-table .not-lose p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .pricing-table .business .estimate div {
+    padding: 2px 6px;
+    }
+    .pricing-table .business .estimate .estimate-name p {
+    font-size: 14px;
+    }
+    .pricing-table .access-div h5 {
+    font-size: 25px;
+    }
+    .pricing-table .access-div p {
+    font-size: 20px;
+    }
+	.price-banner .price-tab {
+    	padding-left: 7px;
+    	margin: 10px 0px;
+	}
+	.learn-banner h1 {
+    	padding-left: 15px;
+	}
 }

@@ -5,8 +5,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_url')?>/bootstrap/css/bootstrap.min.css">
+	<link href="<?php echo get_bloginfo('template_url'); ?>/fontawesome/css/all.min.css" rel="stylesheet">
 	<link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet">
 
+	
 	<?php wp_head(); ?>
 </head>
 
