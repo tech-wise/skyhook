@@ -25,12 +25,12 @@
 			<div class="row d-none d-md-block">
 				<div class="col-md-12 logos">
 					<ul>
-						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-1.png"></a></li>
-						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-2.png"></a></li>
-						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-3.png"></a></li>
-						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-4.png"></a></li>
-						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-5.png"></a></li>
-						<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-6.png"></a></li>
+						<li><a href="https://gmt.is/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-1.png"></a></li>
+						<li><a href="https://www.ernir.is/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-2.png"></a></li>
+						<li><a href="https://arcticm.is/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-3.png"></a></li>
+						<li><a href="https://www.iberia.com/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-4.png"></a></li>
+						<li><a href="https://www.nac.dk/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-5.png"></a></li>
+						<li><a href="https://aisg.aero/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-6.png"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -50,22 +50,22 @@
                       </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item text-center active">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-1.png"></a>
+                            <a href="https://gmt.is/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-1.png"></a>
                         </div>
                         <div class="carousel-item text-center">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-2.png"></a>
+                            <a href="https://www.ernir.is/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-2.png"></a>
                         </div>
                         <div class="carousel-item text-center">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-3.png"></a>
+                            <a href="https://arcticm.is/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-3.png"></a>
                         </div>
                         <div class="carousel-item text-center">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-4.png"></a>
+                            <a href="https://www.iberia.com/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-4.png"></a>
                         </div>
                         <div class="carousel-item text-center">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-5.png"></a>
+                            <a href="https://www.nac.dk/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-5.png"></a>
                         </div>
                         <div class="carousel-item text-center">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-6.png"></a>
+                            <a href="https://aisg.aero/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-6.png"></a>
                         </div>
                     </div>
                     </div>
@@ -143,7 +143,7 @@
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/AOC.png">
 					<a href="#" class="d-md-none">Learn More</a>
 				</div>
-				<div class="col-lg-5 col-md-6 aoc-text order-md-2 skyhook-primary-para">
+				<div class="col-lg-5 col-md-6 aoc-text order-md-2 skyhook-primary-para skyhook-primary-button">
 					<h5><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png"> Skyhook for AOC’s</h5>
 					<h1>Work together to explore & grow your product.</h1>
 					<div class="text-img d-md-none">

@@ -56,7 +56,7 @@
 	                <div class="col-md-3 col-sm-6 list solution">
 	                    <h5>SOLUTION</h5>
 	                    <ul>
-	                        <li><a href="#">Skyhook for Technicions</a></li>
+	                        <li><a href="#">Skyhook for Technicians</a></li>
 	                        <li><a href="#">Skyhook for Port-145</a></li>
 	                        <li><a href="#">Skyhook for AOC's</a></li>
 	                    </ul>
