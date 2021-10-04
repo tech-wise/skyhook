@@ -1,0 +1,933 @@
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('./fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('./fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Semibold';
+  src: url('./fonts/Montserrat-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Volte-Light';
+  src: url('./fonts/Volte-Light.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Volte-Medium';
+  src: url('./fonts/Volte-Medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Volte-Semibold';
+  src: url('./fonts/Volte-Semibold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Volte-Bold';
+  src: url('./fonts/Volte-Bold.otf') format('truetype');
+}
+
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor !important;
+  border: 0;
+  opacity: 0.25;
+}
+
+
+/*General classes*/
+
+body {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat-Regular';
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-family: 'Montserrat-Regular';
+}
+
+img {
+  max-width: 100%;
+  height: auto!important;
+}
+
+a, button, input[type="submit"] {
+  transition: all 0.5s ease!important;
+  text-decoration: none;
+}
+
+a:hover, button:hover, input[type="submit"]:hover {
+  opacity: 0.8!important;
+  text-decoration: none!important;
+  transition: all 0.5s ease!important;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Volte-Bold';
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/*Covid Notification CSS*/
+.covid {
+  background-color: #00628C;
+  color: #fff;
+  padding: 8px 0;
+  text-align: center;
+}
+.covid .container {
+  position: relative;
+}
+.covid .text a {
+  position: absolute;
+  right: 15px;
+}
+/*Covid Notification CSS*/
+
+/*Header CSS*/
+header {
+  padding: 15px 0;
+  background-color: #F5F8FA;
+}
+header .menu {
+  margin-top: 5px;
+}
+header .menu ul li {
+  padding: 0 5px;
+}
+header .menu ul li a {
+  font-family: 'Montserrat-Medium';
+  color: #282828 !important;
+}
+header .menu ul li.sign-in {
+  background-color: #E4E5E6;
+  margin: 0 5px;
+  border-radius: 7px;
+  padding: 0 10px;
+}
+header .menu ul li.sign-up {
+  background-color: #5939CF;
+  margin-left: 10px;
+  border-radius: 7px;
+  padding: 0 10px;
+}
+header .menu ul li.sign-up a {
+  color: #fff !important;
+}
+header .menu ul li.phone-num ,
+header .mob-num a {
+  padding-left: 30px;
+  background: url('images/phone.png') no-repeat center left;
+  margin-left: 60px;
+}
+header .mob-num a {
+    margin-left: 0;
+    float: right;
+    padding: 20px 0 15px 40px;
+}
+header .menu ul li.phone-num a ,
+header .mob-num a {
+  color: #5939CF !important;
+  font-family: 'Montserrat-Bold';
+}
+/*Header CSS*/
+
+/*Banner Section Start*/
+.main-banner {
+  background: url('images/banner-bg.png') no-repeat;
+  padding: 100px 0 150px;
+  position: relative;
+
+}
+.main-banner .banner-img img {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.main-banner .banner-text h5 {
+  font-size: 24px;
+  font-family: 'Volte-Medium';
+  color: #555;
+}
+.main-banner .banner-text h1 {
+  font-size: 54px;
+  line-height: 1;
+}
+.main-banner .banner-text p {
+  font-size: 22px;
+}
+.main-banner .banner-text a ,
+.technicians .technicians-text a ,
+.part-145 .part-145-text a ,
+.aoc .aoc-text a {
+  background-color: #5939CF;
+  margin-top: 30px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Montserrat-Medium';
+}
+.banner-logos {
+  position: relative;
+  z-index: -1;
+  padding-bottom: 30px;
+}
+.banner-logos .logos ul li {
+  display: inline-block;
+  margin: 0 6px;
+}
+/*Banner Section End*/
+
+/*Tabs Section Start*/
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .tabs {
+  background-color: #00628C;
+  border-radius: 7px;
+}
+.nav-tabs ul li {
+  float: left;
+}
+.nav-tabs ul li a {
+  color: #fff;
+  font-family: 'Volte-Medium';
+  font-size: 18px;
+  margin: 0 15px;
+  padding: 15px 5px;
+  display: inline-block;
+}
+.nav-tabs ul li.active {
+  border-bottom: 3px solid #fff;
+}
+/*Tabs Section End*/
+
+/*Technicians Section Start*/
+.technicians {
+  padding: 100px 0 70px;
+}
+.technicians .technicians-text h5 ,
+.part-145 .part-145-text h5 ,
+.aoc .aoc-text h5{
+  font-family: 'Volte-Medium';
+  font-size: 18px;
+}
+.technicians .technicians-text h1 ,
+.part-145 .part-145-text h1 ,
+.aoc .aoc-text h1 {
+  font-size: 50px;
+  line-height: 1;
+}
+.technicians .technicians-text p ,
+.part-145 .part-145-text p ,
+.aoc .aoc-text p {
+  font-size: 19px;
+}
+/*Technicians Section End*/
+
+/*Part 145 Section Start*/
+.part-145 {
+  background-color: #F2F1F3;
+  padding: 50px 0;
+  position: relative;
+}
+.part-145 .part-145-text ,
+.aoc .aoc-text {
+  margin-top: 50px;
+  position: relative;
+}
+.part-145 .text-img img {
+  position: absolute;
+  bottom: -15px;
+  right: -90px;
+}
+/*Part 145 Section End*/
+
+/*AOC Section Start*/
+.aoc {
+  padding: 70px 0;
+}
+.aoc .text-img img {
+  position: absolute;
+  right: -30px;
+  bottom: -70px;
+  }
+/*AOC Section End*/
+
+/*About Section Start*/
+.about {
+  background: url('images/about-bg.png') no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  padding: 70px 0 50px;
+  color: #fff;
+  position: relative;
+}
+.about .about-text h1 {
+  font-size: 45px;
+}
+.about .about-text p {
+  font-size: 18px;
+  font-family: 'Montserrat-Light';
+}
+.about .about-btn a {
+  background-color: #fff;
+  margin-top: 30px;
+  display: inline-block;
+  color: #5939cf;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Montserrat-Medium';
+  font-size: 23px;
+  font-weight: bold;
+}
+.about .about-img img {
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+}
+.about .about-video iframe {
+  width:  100%;
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+/*About Section End*/
+
+/*Testimonials Section Start*/
+.testimonials {
+  padding: 70px 0 140px;
+}
+.testimonials h1 {
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+.testimonials .customer-text p {
+  font-size: 24px;
+  font-family: 'Volte-Medium';
+  text-align: left;
+  margin-top: 10px;
+}
+.testimonials .customer-text h5 {
+  font-size: 24px;
+  text-align: left;
+  margin: 20px 0 0;
+}
+.testimonials .customer-text .customer-name p {
+  margin-top: 0;
+}
+.testimonials .customer-text .logo img {
+  margin-top: 20px;
+}
+.testimonials .carousel-inner {
+  box-shadow: 0px 0px 10px 10px #f4f4f4;
+  border-radius: 10px;
+}
+.testimonials .carousel-item {
+  padding: 40px;
+}
+.testimonials .carousel-control-prev-icon ,
+.testimonials .carousel-control-next-icon {
+  background: unset;
+}
+.testimonials .carousel-control-prev {
+  left: -17%;
+  pointer-events: none;
+  opacity: 1;
+}
+.testimonials .carousel-control-next {
+  right: -15%;
+  pointer-events: none;
+  opacity: 1;
+}
+.testimonials .carousel-control-prev span img ,
+.testimonials .carousel-control-next span img {
+  pointer-events: auto;
+}
+
+.testimonials .carousel-indicators {
+  bottom: -70px;
+}
+.testimonials .carousel-indicators li ,
+.our-customer .carousel-indicators li {
+  background-color: #EBEBEB;
+  padding: 5px;
+  margin: 0 3px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.testimonials .carousel-indicators li.active ,
+.our-customer .carousel-indicators li.active{
+  background-color: #5939CF;
+}
+.our-customer .carousel-indicators {
+    bottom: -30px;
+}
+/*Testimonials Section End*/
+
+/* Entries info section start*/
+.entries-info{
+  background-color: #F2F1F3;
+  padding: 75px 0 125px 0px;
+  position: relative;
+}
+.entries-info .entry h1{
+  font-size: 70px;
+  font-family: 'Volte-Bold';
+  color: #5939CF;
+  text-align: center;
+}
+.entries-info .entry .border-line {
+  background: url('images/border.png') no-repeat;
+  background-position: right center;
+}
+.entries-info .entry p{
+  font-size: 23px;
+  padding: 0 50px;
+  font-family: 'Volte-Medium';
+  color: #4E4E4E;
+  text-align: center;
+  line-height: normal;
+}
+.entries-info .people img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.entries-info .plane img{
+  position: absolute;
+  left: 0;
+  bottom: 70px;
+} 
+/* Entries Info Entries section End*/
+
+/* entries info free trail section start*/
+.free-trail {
+  margin-top: -110px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.free-trail .project-software {
+  background-color: #39B8CF;
+  border-radius: 20px;
+  padding: 30px 15px 0px 30px;
+} 
+.free-trail .project-software h1{
+  color: #ffffff;
+  font-size: 45px;
+  font-family: 'Volte-Bold';
+}
+.free-trail .project-software .text ,
+.free-trail .project-software .free-trail-btn {
+  align-self: center;
+}
+.free-trail .project-software .free-trail-btn a{
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  color: #5235BF;
+  font-family: 'Montserrat-Medium';
+  font-size: 25px;
+}
+
+/* Entries info free trail section end*/
+
+
+/* Entries info section end*/
+
+
+/* footer Section Start*/
+footer .footer-top {
+  background: url('images/bckgfooter.png') no-repeat;
+
+  padding: 195px 0 80px 0;
+  background-size: cover;
+}
+/* footer .footer-top .info-text{
+   margin-left: 68px; 
+} */
+footer .footer-top .info-text p ,
+footer .footer-top .list li a ,
+footer .footer-top .list h5 {
+  color: #fff;
+}
+footer .footer-top .info-text p {
+  font-family: 'Montserrat-Medium';
+  font-size: 17px;
+  line-height: 26px;
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 10px;
+
+}
+footer .footer-top .list {
+  margin-top: 25px; 
+}
+footer .footer-top .company{
+  padding-left: 60px;
+}
+footer .footer-top .others{
+  padding-left: 45px;
+}
+footer .footer-top .solution{
+  padding-left: 58px;
+}
+footer .footer-top .list h5{
+  font-family: 'Volte-SemiBold';
+  font-size: 22px;
+}
+footer .footer-top .list li a {
+  color: #C3C3C3;
+  font-family: 'Volte-Light';
+  font-size: 18px;
+  line-height: 34px;
+}
+
+
+/* Fotter Bottom start*/
+footer .footer-bottom {
+  background-color: #00628C;
+  color: #fff;
+  padding: 45px 0 35px;
+  font-size: 16px;
+  font-family: 'Poppins-Regular';
+}
+footer .footer-bottom .copyright p a{
+  color: #fff;
+}
+footer .social-links ul li{
+  float: left;
+  margin: 0 3px;
+}
+footer .footer-bottom .social-links ul {
+    float: right;
+}
+/* footer bottom end*/
+
+/* Footer secton end*/
+
+
+
+
+@media(min-width: 1440px){
+    .entries-info {
+        padding: 75px 0 150px;
+    }
+    .main-banner .banner-text {
+        margin-left: 30px;
+    }
+}
+@media(min-width: 1280px){
+  .container {
+    max-width: 1200px;
+  }
+}
+@media(max-width: 1279.98px){
+  .container {
+    max-width: 95%;
+  }
+
+  header .menu {
+      margin-top: 0px;
+  }
+  header .menu ul li {
+    padding: 0;
+  }
+  header .menu ul li.phone-num {
+    padding-left: 25px;
+    margin-left: 5px;
+  }
+  header .menu ul li a {
+    font-size: 14px;
+  }
+  header .menu ul li.sign-in ,
+  header .menu ul li.sign-up {
+    padding: 0 6px;
+  }
+  .main-banner {
+    padding: 70px 0 120px;
+    background-position: bottom center;
+  }
+  .main-banner .banner-img img {
+    width: 50%;
+  }
+  .main-banner .banner-text h1 {
+      font-size: 42px;
+  }
+  .banner-logos .logos ul li {
+    width: 15%;
+    margin: 0 5px;
+    text-align: center
+  }
+  .technicians .technicians-text h1, 
+  .part-145 .part-145-text h1, 
+  .aoc .aoc-text h1 {
+      font-size: 40px;
+  }
+  .part-145 {
+    padding-bottom: 160px;
+  }
+  .part-145 .text-img img {
+    bottom: -150px;
+    right: -100px;
+  }
+  .aoc .text-img img {
+    right: -20px;
+    bottom: -165px;
+  }
+  .aoc {
+    padding-bottom: 170px;
+  }
+  .testimonials .carousel-item {
+    padding: 30px;
+  }
+  .free-trail .project-software .free-trail-btn a {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .free-trail .project-software h1 {
+    font-size: 35px;
+  }
+  .entries-info .entry p {
+    padding: 0 30px;
+  }
+  .entries-info .entry h1 {
+    font-size: 55px;
+  }
+  .entries-info .plane img {
+    bottom: 30px;
+  }
+  .free-trail {
+    margin-top: -80px;
+  }
+  footer .footer-top .others {
+      padding-left: 30px;
+  }
+  footer .footer-top .list li a {
+    font-size: 17px;
+  }
+  footer .footer-top .solution {
+    padding-left: 12px;
+  }
+}
+
+@media(max-width: 991.98px) {
+  header .menu nav button {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding: 0;
+    border: none;
+  }
+  .main-banner .banner-text h5 {
+    font-size: 20px;
+  }
+  .main-banner .banner-text h1 {
+      font-size: 32px;
+  }
+  .main-banner .banner-text p {
+      font-size: 18px;
+  }
+  .main-banner .banner-img img {
+    top: 40px;
+  }
+  .banner-logos .logos ul li {
+    width: 30%;
+  }
+  .technicians .technicians-text h1, 
+  .part-145 .part-145-text h1, 
+  .aoc .aoc-text h1 {
+    font-size: 30px;
+  }
+  .part-145 .part-145-text, .aoc .aoc-text {
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .technicians .technicians-text p, 
+  .part-145 .part-145-text p, 
+  .aoc .aoc-text p ,
+  .about .about-text p {
+    font-size: 16px;
+  }
+  .about .about-img img {
+    left: 0;
+  }
+  .testimonials .customer-text p {
+    font-size: 18px;
+  }
+  .testimonials .customer-text h5 {
+    font-size: 20px;
+  }
+  .testimonials .carousel-control-prev span img, 
+  .testimonials .carousel-control-next span img {
+    width: 30px;
+  }
+  .testimonials .carousel-control-next {
+    right: -8%;
+  }
+  .testimonials .carousel-control-prev {
+    left: -14%;
+  }
+  .entries-info .entry p {
+    padding: 0;
+  }
+  .entries-info .entry h1 {
+    font-size: 40px;
+  }
+  .entries-info .people img ,
+  .entries-info .plane img {
+    width: 200px;
+  }
+  .entries-info .plane img {
+    bottom: 60px;
+  }
+  .free-trail .project-software .free-trail-btn a {
+    font-size: 15px;
+    padding: 15px 10px;
+  }
+  .free-trail .project-software h1 {
+    font-size: 27px;
+  }
+  footer .footer-top .company {
+    padding-left: 12px;
+  }
+  footer .footer-top .info-text p {
+    font-size: 15px;
+    line-height: normal;
+  }
+  footer .footer-top .list {
+    margin-top: 20px;
+  }
+  footer .footer-top {
+    padding-top: 125px;
+  }
+}
+@media(max-width: 767.98px){
+  .covid .text span {
+    font-size: 12px;
+  }
+  .main-banner .banner-img img {
+    position: unset;
+    width: 100%;
+  }
+  .part-145 .text-img img {
+    top: 10px;
+    width: 300px;
+    right: -250px;
+    z-index: -1;
+  }
+  .main-banner {
+    padding: 40px 0 20px;
+    background-color: #F5F8FA;
+    background-size: contain;
+  }
+  .testimonials .carousel-control-prev {
+    left: -5%;
+  }
+  .testimonials .carousel-control-next {
+    right: 0%;
+  }
+  .technicians {
+    padding: 70px 0;
+  }
+  .technicians .technicians-img img, 
+  .aoc .aoc-img img {
+    margin-bottom: 15px;
+  }
+  .aoc .text-img img {
+    position: unset;
+    margin-bottom: 10px;
+  }
+  .entries-info .entry .border-line {
+      background: unset;
+      margin-bottom: 15px;
+  }
+  .entries-info .entry h1 {
+    margin-bottom: 0;
+  }
+  .aoc {
+    padding-bottom: 60px;
+  }
+  .about {
+      overflow-x: hidden;
+  }
+  .about .about-img img {
+    left: unset;
+    right: -50px;
+    top: 125px;
+  }
+  .about .about-text p {
+      padding-right: 100px;
+  }
+  .part-145 {
+    padding-bottom: 50px;
+    overflow-x: hidden;
+  }
+  .about .about-btn a {
+    font-size: 16px;
+  }
+  .testimonials h1 {
+    font-size: 35px;
+  }
+  .entries-info .people img {
+    display: none;
+  }
+  .entries-info .plane img {
+      position: unset;
+  }
+  .free-trail .project-software .free-trail-btn a {
+    margin: 20px 0 30px;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 18px;
+  }
+  .free-trail .project-software h1 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  footer .footer-top {
+    padding-top: 350px;
+    padding-bottom: 40px;
+  }
+  footer .footer-bottom {
+    padding: 20px 0;  
+  }
+}
+@media(max-width: 575.98px){
+  .covid .text {
+    text-align: left !important;
+  }
+  .covid .text span {
+    font-size: 10px;
+    display: inline-block;
+  }
+  .main-banner .banner-text {
+      text-align: center;
+  }
+  .main-banner .banner-text p {
+    font-size: 17px;
+  }
+  .banner-logos {
+     margin-top: 20px;
+     padding-bottom: 50px;
+  }
+  .banner-logos .logos ul li {
+    margin: 0 3px;
+  }
+  .about .about-btn a {
+      padding: 10px 50px;
+  }
+  .about .about-img img {
+      top: 60px;
+  }
+  .nav-tabs ul li {
+      width: 33%;
+  }
+  .nav-tabs ul li a {
+    font-size: 15px;
+    margin: 0 5px;
+  }
+  .main-banner .banner-text a, 
+  .technicians .technicians-text a, 
+  .part-145 .part-145-text a, 
+  .aoc .aoc-text a {
+    padding: 10px 35px;
+    margin-bottom: 20px;
+  }
+  .testimonials h1 {
+    font-size: 26px;
+  }
+  .testimonials .customer-img img {
+      margin-bottom: 10px;
+  }
+  .testimonials .customer-text p {
+    font-size: 16px;
+  }
+  .entries-info .entry p {
+    font-size: 15px;
+  }
+  .testimonials .customer-text h5 {
+      font-size: 18px;
+  }
+  .entries-info {
+    padding: 40px 0 110px;
+  }
+  .free-trail .project-software h1 {
+    font-size: 22px;
+  }
+  footer .footer-top .list {
+    margin-top: 10px;
+    text-align: center;
+  }
+  footer .social-links ul {
+      margin: 20px auto;
+      width: 52%;
+  }
+  footer .social-links ul li{
+      margin: 0 5px 20px;
+  }
+  .main-banner .banner-text h1 {
+    font-size: 29px;
+  }
+  .about .about-text h1 {
+    font-size: 38px;
+  }
+  footer .footer-top .info-text p {
+    font-size: 14px;
+  }
+  footer .footer-top .list li a {
+    font-size: 16px;
+  }
+  footer .footer-bottom .copyright {
+      text-align: center;
+  }
+  .covid .text a {
+      right: 0;
+  }
+}
+
+@media(max-width: 359.98px){
+  .testimonials h1 {
+    font-size: 23px;
+  }
+  .free-trail .project-software h1 {
+    font-size: 20px;
+  }
+  footer .social-links ul {
+    width: 60%;
+  }
+}
