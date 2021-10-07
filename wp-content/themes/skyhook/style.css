@@ -128,7 +128,53 @@ ul {
   list-style: none;
   padding: 0;
 }
+/*faqlist css start*/
+.faq-list{
+  padding-top:3%;
+}
+.faq-list .faq-box{
+	margin-top:10px;
+}
+.faq-list h1{
+ padding-top:2rem;
+	font-family: "Volte-Semibold";
+}
+.faq-box h4{
+	padding-top:2rem;
+	font-size:23px;
+	font-family: "Volte-Semibold";
+	
+}
+.faq-box p{
+	 font-size: 20px;
+  color: #6c808f;
+	padding-top:1rem;
+	font-family: 'Quicksand', sans-serif;
+}
+.list-box h4{
+	font-size:24px;
+	font-family: "Volte-Semibold";
+ 
+}
+.list-box p{
+	 font-size: 20px;
+  color: #6c808f;
+	padding-top:1rem;
+	font-family: 'Quicksand', sans-serif;
+}
 
+.faq-box .divider {
+  width: 98%;
+  height: 2px;
+  background-color: #cccccc !important;
+  margin: 45px auto;
+}
+.flex img{
+	margin-top:-5%;
+	position:absolute;
+	margin-left:40px;
+	}
+/*faq list css end*/
 /*Covid Notification CSS*/
 .covid {
   background-color: #00628c;
@@ -146,6 +192,10 @@ ul {
   position: absolute;
   right: 15px;
 }
+
+ 
+
+
 /*Covid Notification CSS*/
 
 /*Header CSS*/
@@ -813,6 +863,10 @@ footer .footer-bottom .social-links ul li a i {
 /*Easa-guide section Css end*/
 
 /*Learn Page CSS End*/
+
+
+
+
 
 /*Contact Us Page Start*/
 .get-in-touch {
@@ -1742,6 +1796,170 @@ footer .footer-top .info-text p {
 /*##################################################### solution page css End ###############################################*/
 
 /*solution Page END*/
+
+/*##################################################### customer stories section Start ###############################################*/
+.first-logo {
+  margin-top: 50px;
+}
+.second-logo {
+  margin-left: 32px;
+  margin-top: -13px;
+}
+.fifth-logo {
+  margin-left: 48px;
+}
+.sixth-logo {
+  margin-left: 69px;
+}
+.customer-post {
+  margin-top: 120px;
+  /* background-image: url("images/Custmor-banner.jpg"); */
+  background-repeat: no-repeat;
+  margin-left: 150px;
+  background-size: 769px;
+}
+.left-side-list {
+  /* margin-top: 428px; */
+}
+.company-logo img {
+  width: 122px;
+  margin-top: 15px;
+  margin-left: -80px;
+}
+.fist-pargraf p {
+  font-family: "Poppins-Regular";
+  font-size: 22px;
+  line-height: 36px;
+  color: #003452;
+  /* margin-top: 19px; */
+  /* padding-right: 137px;
+  padding-left: 30px;
+  margin-top: -17px; */
+}
+.image-spacing {
+  margin-left: -20px;
+}
+.compny-paragraph {
+  margin-left: -44px;
+}
+.pantlies {
+  margin-top: 36px;
+  margin-left: 100px;
+}
+
+.pantlies p {
+  margin-left: -60px;
+  float: left;
+  font-size: 18px;
+  font-family: "Poppins-Regular";
+}
+.fist-pargraf .mgt-para p {
+  margin-top: 20px;
+  padding-right: 31px;
+  margin-left: -81px;
+}
+.fist-pargraf .last-para p {
+  margin-top: 25px;
+  margin-bottom: 250px;
+  margin-left: -86px;
+  margin-right: 152px;
+}
+
+.three-images {
+  margin-top: 50px;
+  width: 100%;
+  margin-left: -100px;
+}
+
+.left-heading {
+  margin-top: -60px;
+}
+.main-image {
+}
+.left-heading h3 {
+  font-family: "Volte-Semibold";
+  font-size: 30px;
+  color: #00628c;
+  line-height: 55px;
+}
+.box-color {
+  background-color: #00628c;
+  max-width: 100%;
+  margin-left: 0px;
+  padding-top: 34px;
+  padding-bottom: 24px;
+}
+
+.box-color P {
+  font-size: 17px;
+  line-height: 26px;
+  font-family: "Poppins-Regular";
+  margin-bottom: 10px;
+  /* margin-top: 40px; */
+  color: #fff;
+  /* margin-left: 18px; */
+  padding-left: 17px;
+}
+.left-para {
+  padding-right: 10px;
+}
+.main-list-box {
+  border: 1px solid;
+  box-shadow: 0px 0px 15px 12px #f2f2f2;
+  color: #bebebe;
+}
+.list-box p {
+  font-size: 17px;
+  line-height: 26px;
+  font-family: "Poppins-Regular";
+  margin-bottom: 10px;
+  margin-top: 40px;
+  color: #34536a;
+  /* margin-left: -12px; */
+
+  /* padding-right: 30px; */
+}
+.list-box {
+  padding-bottom: 10px;
+  margin-top: -8px;
+}
+
+.white-logo {
+  margin-left: 20px;
+  max-width: 50%;
+  margin-top: 22px;
+}
+.bottom-border {
+  max-width: 100%;
+  margin-left: 0px;
+  border-bottom: 1px solid;
+  color: #bebebe;
+}
+.left-logo {
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 50%;
+  margin-top: 48px;
+  /* padding-left: 0px; */
+  /* padding-left: 10px; */
+}
+.right-cort {
+  margin-left: -82px;
+  margin-top: 20px;
+}
+
+.left-cort {
+  margin-left: 256px;
+}
+
+.list-box :last-child() {
+  margin-bottom: 50px;
+}
+.left-side-list .top-bnr img {
+  max-width: 772px;
+  margin-left: -90px;
+}
+/*##################################################### customer stories section  End ###############################################*/
 
 /*mix css start*/
 
