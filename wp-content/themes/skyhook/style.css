@@ -234,14 +234,23 @@ ul {
 	padding-top:0rem;
 }
 }
+ @media(max-width:767.98px){
+ .flex img{
+	display:none;
+	}
+/*---
   @media(max-width:767.98px){
  .flex img{
 	
+	 position:relative;
 	}
+	  .faq-box p{
+		  position:absolute;
+	  }
 .box-list{
 		 padding-bottom:-3%;
 	   }
-}
+}---*/
 @media(max-width:563px){
 .box-list p, .faq-box p{
 		font-size: 17px;
