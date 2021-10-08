@@ -235,8 +235,8 @@ ul {
 }
 }
   @media(max-width:767.98px){
- .flex{
-		display:right;
+ .flex img{
+	
 	}
 .box-list{
 		 padding-bottom:-3%;
