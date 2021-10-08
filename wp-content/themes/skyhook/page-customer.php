@@ -27,7 +27,7 @@
                 </div>
                 <div class="fist-pargraf ">
                     <div class="right-cort">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/right-invert-coma-logo.png">
+               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/right-invert-coma-logo.png">
 
                     </div>
                     <div class="compny-paragraph">
@@ -55,7 +55,7 @@
 
                         <div class="col-md-5 first-logo">
                             <a href="#">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-1.png">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories1.png">
                             </a>
                         </div>
                         <div class="col-md-7  ">
@@ -70,7 +70,7 @@
                         <div class="col-md-5  first-logo ">
                             <div class="second-logo">
                                 <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-2.png">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-2.png">
                                 </a>
                             </div>
                         </div>
@@ -85,9 +85,11 @@
                     <div class="row  box-color ">
 
                         <div class="col-md-4 white-logo ">
-                            <a href="#">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/gmt-blue-logo.png">
-                            </a>
+                            <div class="third-logo">
+                                <a href="#">
+                          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/gmt-blue-logo.png">
+                                </a>
+                            </div>
                         </div>
                         <div class="col-md-7">
                             <a href="#">
@@ -97,10 +99,13 @@
 
                     </div>
                     <div class="row list-box bottom-border">
-                        <div class="col-md-5 first-logo">
+                        <div class="col-md-5 first-logo fourth-logo">
+
                             <a href="#">
+
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-4.png">
                             </a>
+
                         </div>
                         <div class="col-md-7">
                             <a href="#">
@@ -112,7 +117,7 @@
                         <div class="col-md-5 first-logo">
                             <div class="fifth-logo">
                                 <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-5.png">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-5.png">
                                 </a>
                             </div>
                         </div>
@@ -126,7 +131,7 @@
                         <div class="col-md-5 first-logo">
                             <div class="sixth-logo">
                                 <a href="#">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-6.png">
+                              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-6.png">
                                 </a>
                             </div>
                         </div>

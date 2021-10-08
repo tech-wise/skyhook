@@ -1871,6 +1871,185 @@ footer .footer-top .info-text p {
 
 /*#########solution section-11  end ##############*/
 
+/*##################################################### customer stories section Start ###############################################*/
+.first-logo {
+  margin-top: 50px;
+}
+.second-logo {
+  margin-left: 32px;
+  margin-top: -13px;
+}
+.fifth-logo {
+  margin-left: 48px;
+}
+.sixth-logo {
+  margin-left: 69px;
+}
+.customer-post {
+  margin-top: 120px;
+  /* background-image: url("images/Custmor-banner.jpg");
+  background-repeat: no-repeat;
+  margin-left: 150px;
+  background-size: 769px; */
+  margin-left: 150px;
+}
+.left-side-list {
+  /* margin-top: 428px; */
+}
+.company-logo img {
+  width: 122px;
+  margin-top: 15px;
+  margin-left: 0px;
+  /* margin-left: -80px; */
+}
+.fist-pargraf p {
+  font-family: "Poppins-Regular";
+  font-size: 22px;
+  line-height: 36px;
+  color: #003452;
+  /* margin-top: 19px; */
+  /* padding-right: 137px;
+  padding-left: 30px;
+  margin-top: -17px; */
+}
+.image-spacing {
+  margin-left: -20px;
+}
+.compny-paragraph {
+  margin-left: 39px;
+}
+.pantlies {
+  margin-top: 80px;
+  float: right;
+}
+
+.pantlies p {
+  margin-left: 160px;
+  float: left;
+  font-size: 18px;
+  font-family: "Poppins-Regular";
+}
+.fist-pargraf .mgt-para p {
+  margin-top: 20px;
+  padding-right: 108px;
+  /* margin-left: -81px; */
+}
+.fist-pargraf .last-para p {
+  margin-top: 25px;
+  margin-bottom: 250px;
+  /* padding-right: 70px; */
+  /* margin-left: -86px; */
+  margin-right: 120px;
+}
+
+.three-images {
+  margin-top: 50px;
+  max-width: 1085px;
+  /* margin-left: -100px;   */
+}
+
+.left-heading {
+  margin-top: -60px;
+}
+.main-image {
+}
+.left-heading h3 {
+  font-family: "Volte-Semibold";
+  font-size: 30px;
+  color: #00628c;
+  line-height: 55px;
+}
+.box-color {
+  background-color: #00628c;
+  max-width: 100%;
+  margin-left: 0px;
+  padding-top: 34px;
+  padding-bottom: 24px;
+}
+
+.box-color P {
+  font-size: 15px;
+  line-height: 26px;
+  font-family: "Poppins-Regular";
+  margin-bottom: 10px;
+  /* margin-top: 40px; */
+  color: #fff;
+  /* margin-left: 18px; */
+  /* padding-left: 17px; */
+}
+.left-para {
+  padding-right: 10px;
+}
+.main-list-box {
+  border: 1px solid;
+  box-shadow: 0px 0px 15px 12px #f2f2f2;
+  color: #bebebe;
+}
+.list-box p {
+  line-height: 26px;
+  font-family: "Poppins-Regular";
+  margin-bottom: 10px;
+  margin-top: 40px;
+  color: #34536a;
+  font-size: 15px;
+  /* margin-left: -12px; */
+
+  /* padding-right: 30px; */
+}
+.list-box {
+  padding-bottom: 10px;
+  margin-top: -8px;
+}
+
+.white-logo {
+  margin-left: 20px;
+  max-width: 50%;
+  margin-top: 22px;
+}
+.bottom-border {
+  max-width: 100%;
+  margin-left: 0px;
+  border-bottom: 1px solid;
+  color: #bebebe;
+}
+.left-logo {
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 50%;
+  margin-top: 48px;
+  /* padding-left: 0px; */
+  /* padding-left: 10px; */
+}
+.right-cort {
+  /* margin-left: -82px; */
+  margin-top: 20px;
+
+  margin-right: 79px;
+}
+
+.left-cort {
+  margin-right: 70px;
+  float: inline-end;
+  float: right;
+}
+
+.list-box :last-child() {
+  margin-bottom: 50px;
+}
+.left-side-list .top-bnr img {
+  /* max-width: 772px;
+  margin-left: -90px; */
+
+  max-width: 709px;
+  margin-left: -90px;
+  margin-left: -28px;
+}
+.right-side-list {
+  /* margin-left: 100px; */
+}
+/*##################################################### customer stories section  End ###############################################*/
+
+
 /*##################################################### solution page css End ###############################################*/
 
 /*solution Page END*/
