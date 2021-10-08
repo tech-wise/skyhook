@@ -41,7 +41,7 @@ get_header();
 	</section>
 <!-- Learn Banner End -->
 <!----faq list section--->
-<section class="faq-list mb-5 mt-3">
+<section class="faq-list mt-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
@@ -60,8 +60,8 @@ get_header();
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 mb-5">
-				<div class="list-box">
+			<div class="col-md-8">
+				<div class="box-list pb-4">
 				     <h4>Do i need to enter my credit card details to sign up?</h4>
 				      <p>Not a problem,Sign up for the 30 days free trail account for the busniesses and if you are
 					     satisfied you can explore the subscription plans available.</p>

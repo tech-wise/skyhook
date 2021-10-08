@@ -46,7 +46,7 @@
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/gmt-small-logo.png">
                 </div>
             </div>
-            <div class="col-md-5 right-side-list ">
+            <div class="col-md-4 right-side-list ">
                 <div class="left-heading">
                     <h3>Stories</h3>
                 </div>
