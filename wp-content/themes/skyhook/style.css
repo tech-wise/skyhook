@@ -128,10 +128,9 @@ ul {
   list-style: none;
   padding: 0;
 }
-/////**********/////
 /*faqlist css start*/
 .faq-list{
-  margin-top:5%;
+  padding-top:3%;
 }
 .faq-list .faq-box{
 	margin-top:10px;
@@ -144,14 +143,16 @@ ul {
 	padding-top:2rem;
 	font-size:23px;
 	font-family: "Volte-Semibold";
-	}
+	
+}
 
-.box-list h4{
+.list-box h4{
 	font-size:24px;
 	font-family: "Volte-Semibold";
- }
-.box-list p, .faq-box p{
-	 font-size:20px;
+ 
+}
+.list-box p, .faq-box p{
+	 font-size: 20px;
   color: #6c808f;
 	padding-top:1rem;
 	font-family: 'Quicksand', sans-serif;
@@ -164,14 +165,14 @@ ul {
   margin: 45px auto;
 }
 .flex img{
-	margin-top:-4%;
+	margin-top:-5%;
 	position:absolute;
 	margin-left:40px;
 	}
 /*faq list css end*/
  @media(max-width:1084px)
  {
-.flex img{
+	.flex img{
 	margin-top:5%;
 	position:absolute;
 	margin-left:35px;
@@ -179,30 +180,8 @@ ul {
 }
 /*responsive faq list*/
    @media(max-width:991.98px){
-	   .list-box p, .faq-box p{
-	 font-size: 18px;
-	padding-top:1rem;
-}
-.faq-box .divider {
-  width: 95%;
-  height: 2px;
-  
-}
- .faq-box h4{
-	font-size:20px;
-	
-}
-.box-list h4{
-	font-size:20px;
- 
-} 
-.flex img{
-		   margin-left:-20px;
-		   margin-top:10px;
-	   }
-}
- @media(max-width:920px){
-	   .box-list p, .faq-box p{
+	   
+	.list-box p, .faq-box p{
 	 font-size: 18px;
 	padding-top:1rem;
 }
@@ -210,56 +189,69 @@ ul {
 .faq-box .divider {
   width: 95%;
   height: 2px;
-  }
-.faq-box h4{
+  
+}
+	   .faq-box h4{
 	font-size:20px;
-	}
-.box-list h4{
+	
+}
+
+.list-box h4{
 	font-size:20px;
- } 
- .flex img{
+ 
+} 
+	   .flex img{
+		   margin-left:-20px;
+		   margin-top:10px;
+	   }
+}
+ @media(max-width:920px){
+	   
+	.list-box p, .faq-box p{
+	 font-size: 18px;
+	padding-top:1rem;
+}
+
+.faq-box .divider {
+  width: 95%;
+  height: 2px;
+  
+}
+	   .faq-box h4{
+	font-size:19px;
+	
+}
+
+.list-box h4{
+	font-size:19px;
+ 
+} 
+	   .flex img{
 		   margin-left:-20px;
 		   margin-top:15px;
 		   position:absolute;
-	 }
+	   }
 }
 @media(max-width:867.98px){
-.flex img{
+	.flex img{
 		   margin-left:-20px;
 		   margin-top:11%;
 		   position:absolute;
 	   }
-.box-list p, .faq-box p{
-	 font-size: 19px;
+		.list-box p, .faq-box p{
+	 font-size: 16px;
 	padding-top:0rem;
 }
 }
- @media(max-width:767.98px){
- .flex img{
-	display:none;
+   @media(max-width:767.98px){
+	  .flex{
+		display:none;
 	}
-/*---
-  @media(max-width:767.98px){
- .flex img{
-	
-	 position:relative;
-	}
-	  .faq-box p{
-		  position:absolute;
-	  }
-.box-list{
+	   .list-box{
 		 padding-bottom:-3%;
 	   }
-}---*/
-@media(max-width:563px){
-.box-list p, .faq-box p{
-		font-size: 17px;
-	}
-	.page-heading h1{
-		font-size:20px;
-		display:inline;
-	}
 }
+
 
 /*Covid Notification CSS*/
 .covid {
@@ -1899,11 +1891,10 @@ footer .footer-top .info-text p {
 }
 .customer-post {
   margin-top: 120px;
-  margin-left: 140px;
   /* background-image: url("images/Custmor-banner.jpg"); */
-  /*background-repeat: no-repeat;*/
-  /*margin-left: 150px;*/
-  /*background-size: 769px;*/
+  background-repeat: no-repeat;
+  margin-left: 150px;
+  background-size: 769px;
 }
 .left-side-list {
   /* margin-top: 428px; */
@@ -1911,8 +1902,7 @@ footer .footer-top .info-text p {
 .company-logo img {
   width: 122px;
   margin-top: 15px;
-  margin-left: 0px;
-  /* margin-left: -80px; */
+  margin-left: -80px;
 }
 .fist-pargraf p {
   font-family: "Poppins-Regular";
@@ -1928,37 +1918,35 @@ footer .footer-top .info-text p {
   margin-left: -20px;
 }
 .compny-paragraph {
-  /* margin-left: -44px; */
-  margin-left: 39px;
+  margin-left: -44px;
 }
 .pantlies {
-  margin-top: 70px;
-  float: right;
+  margin-top: 36px;
+  margin-left: 100px;
 }
 
 .pantlies p {
-  margin-left: 160px;
+  margin-left: -60px;
   float: left;
   font-size: 18px;
   font-family: "Poppins-Regular";
 }
 .fist-pargraf .mgt-para p {
   margin-top: 20px;
-  padding-right: 108px;
-  /* margin-left: -81px; */
+  padding-right: 31px;
+  margin-left: -81px;
 }
 .fist-pargraf .last-para p {
   margin-top: 25px;
   margin-bottom: 250px;
-  padding-right: 70px;
-  /* margin-left: -86px; */
-  margin-right: 44px;
+  margin-left: -86px;
+  margin-right: 152px;
 }
 
 .three-images {
   margin-top: 50px;
-  max-width: 1085px;
-  /* margin-left: -100px;   */
+  width: 100%;
+  margin-left: -100px;
 }
 
 .left-heading {
@@ -1981,14 +1969,14 @@ footer .footer-top .info-text p {
 }
 
 .box-color P {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 26px;
   font-family: "Poppins-Regular";
   margin-bottom: 10px;
   /* margin-top: 40px; */
   color: #fff;
   /* margin-left: 18px; */
-  /* padding-left: 17px; */
+  padding-left: 17px;
 }
 .left-para {
   padding-right: 10px;
@@ -1999,12 +1987,12 @@ footer .footer-top .info-text p {
   color: #bebebe;
 }
 .list-box p {
+  font-size: 17px;
   line-height: 26px;
   font-family: "Poppins-Regular";
   margin-bottom: 10px;
   margin-top: 40px;
   color: #34536a;
-  font-size: 15px;
   /* margin-left: -12px; */
 
   /* padding-right: 30px; */
@@ -2034,31 +2022,20 @@ footer .footer-top .info-text p {
   /* padding-left: 10px; */
 }
 .right-cort {
-  /* margin-left: -82px; */
+  margin-left: -82px;
   margin-top: 20px;
-
-  margin-right: 79px;
 }
 
 .left-cort {
-  margin-right: 70px;
-  float: inline-end;
+  margin-left: 256px;
 }
 
 .list-box :last-child() {
   margin-bottom: 50px;
 }
 .left-side-list .top-bnr img {
-  /* max-width: 772px;
-  margin-left: -90px; */
-
-  max-width: 709px;
+  max-width: 772px;
   margin-left: -90px;
-  margin-left: -28px;
-  
-}
-.right-side-list {
-  margin-right: 10px;
 }
 /*##################################################### customer stories section  End ###############################################*/
 
