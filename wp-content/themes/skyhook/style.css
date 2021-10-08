@@ -236,7 +236,7 @@ ul {
 }
   @media(max-width:767.98px){
  .flex{
-		display:none;
+		display:right;
 	}
 .box-list{
 		 padding-bottom:-3%;
@@ -251,13 +251,7 @@ ul {
 		display:inline;
 	}
 }
-@media(min-width:451px){
-	.page-heading h1{
-		font-size:20px;
-		display:inline !important;
-		margin:auto;
-	}
-}
+
 /*Covid Notification CSS*/
 .covid {
   background-color: #00628c;
