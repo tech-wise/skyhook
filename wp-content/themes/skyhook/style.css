@@ -128,130 +128,6 @@ ul {
   list-style: none;
   padding: 0;
 }
-/*faqlist css start*/
-.faq-list{
-  padding-top:3%;
-}
-.faq-list .faq-box{
-	margin-top:10px;
-}
-.faq-list h1{
- padding-top:2rem;
-	font-family: "Volte-Semibold";
-}
-.faq-box h4{
-	padding-top:2rem;
-	font-size:23px;
-	font-family: "Volte-Semibold";
-	
-}
-
-.list-box h4{
-	font-size:24px;
-	font-family: "Volte-Semibold";
- 
-}
-.list-box p, .faq-box p{
-	 font-size: 20px;
-  color: #6c808f;
-	padding-top:1rem;
-	font-family: 'Quicksand', sans-serif;
-}
-
-.faq-box .divider {
-  width: 98%;
-  height: 2px;
-  background-color: #cccccc !important;
-  margin: 45px auto;
-}
-.flex img{
-	margin-top:-5%;
-	position:absolute;
-	margin-left:40px;
-	}
-/*faq list css end*/
- @media(max-width:1084px)
- {
-	.flex img{
-	margin-top:5%;
-	position:absolute;
-	margin-left:35px;
-	} 
-}
-/*responsive faq list*/
-   @media(max-width:991.98px){
-	   
-	.list-box p, .faq-box p{
-	 font-size: 18px;
-	padding-top:1rem;
-}
-
-.faq-box .divider {
-  width: 95%;
-  height: 2px;
-  
-}
-	   .faq-box h4{
-	font-size:20px;
-	
-}
-
-.list-box h4{
-	font-size:20px;
- 
-} 
-	   .flex img{
-		   margin-left:-20px;
-		   margin-top:10px;
-	   }
-}
- @media(max-width:920px){
-	   
-	.list-box p, .faq-box p{
-	 font-size: 18px;
-	padding-top:1rem;
-}
-
-.faq-box .divider {
-  width: 95%;
-  height: 2px;
-  
-}
-	   .faq-box h4{
-	font-size:19px;
-	
-}
-
-.list-box h4{
-	font-size:19px;
- 
-} 
-	   .flex img{
-		   margin-left:-20px;
-		   margin-top:15px;
-		   position:absolute;
-	   }
-}
-@media(max-width:867.98px){
-	.flex img{
-		   margin-left:-20px;
-		   margin-top:11%;
-		   position:absolute;
-	   }
-		.list-box p, .faq-box p{
-	 font-size: 16px;
-	padding-top:0rem;
-}
-}
-   @media(max-width:767.98px){
-	  .flex{
-		display:none;
-	}
-	   .list-box{
-		 padding-bottom:-3%;
-	   }
-}
-
 
 /*Covid Notification CSS*/
 .covid {
@@ -844,10 +720,10 @@ footer .footer-bottom .social-links ul li a i {
 	margin-bottom: 25px;
 }
 .box.fq-tail:hover{
-    background-color:#5939cf !important;
+    background-color:#fff!important;
 }
 .box:hover a {
-    color:#fff !important;
+    color:darkgray !important;
 }
 .easa-guide .box{
   box-shadow: 3px 11px 9px 9px #f6f6f6;
@@ -1871,183 +1747,7 @@ footer .footer-top .info-text p {
 
 /*#########solution section-11  end ##############*/
 
-/*##################################################### customer stories section Start ###############################################*/
-.first-logo {
-  margin-top: 50px;
-}
-.second-logo {
-  margin-left: 32px;
-  margin-top: -13px;
-}
-.fifth-logo {
-  margin-left: 48px;
-}
-.sixth-logo {
-  margin-left: 69px;
-}
-.customer-post {
-  margin-top: 120px;
-  /* background-image: url("images/Custmor-banner.jpg");
-  background-repeat: no-repeat;
-  margin-left: 150px;
-  background-size: 769px; */
-  margin-left: 150px;
-}
-.left-side-list {
-  /* margin-top: 428px; */
-}
-.company-logo img {
-  width: 122px;
-  margin-top: 15px;
-  margin-left: 0px;
-  /* margin-left: -80px; */
-}
-.fist-pargraf p {
-  font-family: "Poppins-Regular";
-  font-size: 22px;
-  line-height: 36px;
-  color: #003452;
-  /* margin-top: 19px; */
-  /* padding-right: 137px;
-  padding-left: 30px;
-  margin-top: -17px; */
-}
-.image-spacing {
-  margin-left: -20px;
-}
-.compny-paragraph {
-  margin-left: 39px;
-}
-.pantlies {
-  margin-top: 80px;
-  float: right;
-}
 
-.pantlies p {
-  margin-left: 160px;
-  float: left;
-  font-size: 18px;
-  font-family: "Poppins-Regular";
-}
-.fist-pargraf .mgt-para p {
-  margin-top: 20px;
-  padding-right: 108px;
-  /* margin-left: -81px; */
-}
-.fist-pargraf .last-para p {
-  margin-top: 25px;
-  margin-bottom: 250px;
-  /* padding-right: 70px; */
-  /* margin-left: -86px; */
-  margin-right: 120px;
-}
-
-.three-images {
-  margin-top: 50px;
-  max-width: 1085px;
-  /* margin-left: -100px;   */
-}
-
-.left-heading {
-  margin-top: -60px;
-}
-.main-image {
-}
-.left-heading h3 {
-  font-family: "Volte-Semibold";
-  font-size: 30px;
-  color: #00628c;
-  line-height: 55px;
-}
-.box-color {
-  background-color: #00628c;
-  max-width: 100%;
-  margin-left: 0px;
-  padding-top: 34px;
-  padding-bottom: 24px;
-}
-
-.box-color P {
-  font-size: 15px;
-  line-height: 26px;
-  font-family: "Poppins-Regular";
-  margin-bottom: 10px;
-  /* margin-top: 40px; */
-  color: #fff;
-  /* margin-left: 18px; */
-  /* padding-left: 17px; */
-}
-.left-para {
-  padding-right: 10px;
-}
-.main-list-box {
-  border: 1px solid;
-  box-shadow: 0px 0px 15px 12px #f2f2f2;
-  color: #bebebe;
-}
-.list-box p {
-  line-height: 26px;
-  font-family: "Poppins-Regular";
-  margin-bottom: 10px;
-  margin-top: 40px;
-  color: #34536a;
-  font-size: 15px;
-  /* margin-left: -12px; */
-
-  /* padding-right: 30px; */
-}
-.list-box {
-  padding-bottom: 10px;
-  margin-top: -8px;
-}
-
-.white-logo {
-  margin-left: 20px;
-  max-width: 50%;
-  margin-top: 22px;
-}
-.bottom-border {
-  max-width: 100%;
-  margin-left: 0px;
-  border-bottom: 1px solid;
-  color: #bebebe;
-}
-.left-logo {
-  margin-top: 10px;
-  margin-left: 20px;
-  max-width: 50%;
-  margin-top: 48px;
-  /* padding-left: 0px; */
-  /* padding-left: 10px; */
-}
-.right-cort {
-  /* margin-left: -82px; */
-  margin-top: 20px;
-
-  margin-right: 79px;
-}
-
-.left-cort {
-  margin-right: 70px;
-  float: inline-end;
-  float: right;
-}
-
-.list-box :last-child() {
-  margin-bottom: 50px;
-}
-.left-side-list .top-bnr img {
-  /* max-width: 772px;
-  margin-left: -90px; */
-
-  max-width: 709px;
-  margin-left: -90px;
-  /*margin-left: -28px;*/
-}
-.right-side-list {
-  /* margin-left: 100px; */
-}
-/*##################################################### customer stories section  End ###############################################*/
 
 
 /*##################################################### solution page css End ###############################################*/
@@ -2056,7 +1756,7 @@ footer .footer-top .info-text p {
 
 /*##################################################### customer stories section Start ###############################################*/
 .first-logo {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .second-logo {
   margin-left: 32px;
@@ -2070,62 +1770,53 @@ footer .footer-top .info-text p {
 }
 .customer-post {
   margin-top: 120px;
-  /* background-image: url("images/Custmor-banner.jpg"); */
-  background-repeat: no-repeat;
-  margin-left: 150px;
-  background-size: 769px;
+ margin-left: 150px;
 }
-.left-side-list {
-  /* margin-top: 428px; */
-}
+
 .company-logo img {
   width: 122px;
   margin-top: 15px;
-  margin-left: -80px;
+  margin-left: 0px;
+ 
 }
 .fist-pargraf p {
   font-family: "Poppins-Regular";
   font-size: 22px;
   line-height: 36px;
   color: #003452;
-  /* margin-top: 19px; */
-  /* padding-right: 137px;
-  padding-left: 30px;
-  margin-top: -17px; */
-}
+ }
 .image-spacing {
   margin-left: -20px;
 }
 .compny-paragraph {
-  margin-left: -44px;
+  margin-left: 39px;
 }
 .pantlies {
-  margin-top: 36px;
-  margin-left: 100px;
+  margin-top: 98px;
+  float: right;
 }
 
 .pantlies p {
-  margin-left: -60px;
+  margin-left: 265px;
   float: left;
   font-size: 18px;
   font-family: "Poppins-Regular";
+  padding-left:5px;
 }
 .fist-pargraf .mgt-para p {
   margin-top: 20px;
-  padding-right: 31px;
-  margin-left: -81px;
-}
+  padding-right: 108px;
+ }
 .fist-pargraf .last-para p {
   margin-top: 25px;
   margin-bottom: 250px;
-  margin-left: -86px;
-  margin-right: 152px;
+  margin-right: 120px;
 }
 
 .three-images {
   margin-top: 50px;
-  width: 100%;
-  margin-left: -100px;
+  max-width: 1085px;
+  
 }
 
 .left-heading {
@@ -2148,17 +1839,17 @@ footer .footer-top .info-text p {
 }
 
 .box-color P {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 26px;
   font-family: "Poppins-Regular";
   margin-bottom: 10px;
-  /* margin-top: 40px; */
+  
   color: #fff;
-  /* margin-left: 18px; */
-  padding-left: 17px;
+  
 }
 .left-para {
   padding-right: 10px;
+  padding-bottom: 10px;
 }
 .main-list-box {
   border: 1px solid;
@@ -2166,15 +1857,15 @@ footer .footer-top .info-text p {
   color: #bebebe;
 }
 .list-box p {
-  font-size: 17px;
   line-height: 26px;
   font-family: "Poppins-Regular";
   margin-bottom: 10px;
   margin-top: 40px;
   color: #34536a;
-  /* margin-left: -12px; */
+  font-size: 15px;
+ 
 
-  /* padding-right: 30px; */
+  
 }
 .list-box {
   padding-bottom: 10px;
@@ -2197,24 +1888,27 @@ footer .footer-top .info-text p {
   margin-left: 20px;
   max-width: 50%;
   margin-top: 48px;
-  /* padding-left: 0px; */
-  /* padding-left: 10px; */
+ 
 }
 .right-cort {
-  margin-left: -82px;
-  margin-top: 20px;
+margin-right: 79px;
+margin-left: 20px;
 }
 
 .left-cort {
-  margin-left: 256px;
+  margin-right: 70px;
+  float: inline-end;
+  float: right;
+  padding-bottom: 70px;
 }
 
 .list-box :last-child() {
   margin-bottom: 50px;
 }
 .left-side-list .top-bnr img {
-  max-width: 772px;
+   max-width: 710px;
   margin-left: -90px;
+  margin-left: -28px;
 }
 /*##################################################### customer stories section  End ###############################################*/
 
@@ -2284,6 +1978,56 @@ a.bok-demo-btn {
     color: #fff;
     font-size: 45px;
 }
+/*faqlist css start*/
+.faq-list{
+  padding-top:3%;
+}
+.faq-list .faq-box{
+	margin-top:10px;
+}
+.faq-list h1{
+ padding-top:2rem;
+	font-family: "Volte-Semibold";
+}
+.faq-box h4{
+	padding-top:2rem;
+	font-size:23px;
+	font-family: "Volte-Semibold";
+	
+}
+
+.box-list h4{
+	font-size:24px;
+	font-family: "Volte-Semibold";
+ 
+}
+ .faq-box p{
+	 font-size: 20px;
+  color: #6c808f;
+	padding-top:1rem;
+	font-family: 'Quicksand', sans-serif;
+
+}
+.box-list p{
+	 font-size: 20px;
+  color: #6c808f;
+	padding-top:1rem;
+	font-family: 'Quicksand', sans-serif;
+}
+.faq-box .divider {
+  width: 98%;
+  height: 2px;
+  background-color: #cccccc !important;
+  margin: 45px auto;
+}
+.flex img{
+	margin-top:-7%;
+	position:absolute;
+	
+	}
+/*faq list css end*/
+
+
 /* mix css end */
 
 /*=================================== Media Query start=============== */
@@ -2316,12 +2060,48 @@ a.bok-demo-btn {
    .list-section {
         margin: -35px 0px 0px;
     }
+    
+    /*10-11-2021**/
+  .left-side-list .top-bnr img {
+    max-width: 668px;
+    margin-left: -22px;
+}
+ .left-cort {
+   margin-left: 135px;
+}
+.pantlies {
+   float: unset;
+    
+}
+.left-para {
+    padding-right: 12px;
+}
+.left-cort {
+    float: right;
+    float: unset;
+}
+
 }
 @media (max-width: 1679.98px) {
   .solution-banner h1 {
     font-size: 58px;
   }
- 
+  
+.left-para {
+    padding-right: 12px;
+}
+.left-cort {
+   
+    float: left;
+    margin-left: 125px;
+}
+.left-cort {
+   float: right;
+}
+.left-cort {
+    float: right;
+    float: unset;
+}
 }
 @media (max-width: 1559.98px) {
   .sol-section-1 {
@@ -2363,6 +2143,18 @@ a.bok-demo-btn {
     .list-section {
         margin: -70px 0px 0px;
     }
+    .left-side-list .top-bnr img {
+    max-width: 705px;
+    margin-left: -22px;
+}
+.left-cort {
+  float: right;
+}
+/*.right-cort {*/
+/* margin-top: 20;*/
+ 
+/*}*/
+
 }
 @media (max-width: 1365.98px) {
   .sol-section-1 {
@@ -2371,7 +2163,65 @@ a.bok-demo-btn {
   .sol-section-8 {
     background-size: 775px;
   }
+  /*10-14-2021*/
+	
+
 }
+
+/*10-08-2021
+  
+  .left-side-list .top-bnr img {
+    max-width: 669px;
+    margin-left: -28px;
+  }
+  .company-logo img {
+    margin-top: 53px;
+  }
+  .left-cort {
+    float: left;
+    margin-left: 128px;
+  }
+  .pantlies {
+    margin-top: 94px;
+    float: unset;
+  }
+  .list-box p {
+   margin-left: -12px;
+ }
+ .box-color P {
+  margin-left: -9px;
+}
+*/
+
+@media (max-width: 1337px) {	
+	.left-side-list .top-bnr img {
+   max-width: 710px;
+  margin-left: -50px;
+ 
+}
+	.company-logo img {
+  width: 122px;
+  margin-top: 15px;
+  margin-left: 0px;
+ 
+}	
+	
+	}
+@media (max-width: 1299px) {	
+	.left-side-list .top-bnr img {
+   max-width: 700px;
+  margin-left: -50px;
+ 
+}
+	.company-logo img {
+  width: 122px;
+  margin-top: 15px;
+  margin-left: 0px;
+ 
+}	
+	
+	}
+
 @media (max-width: 1279.98px) {
   .container {
     max-width: 95%;
@@ -2619,7 +2469,31 @@ a.bok-demo-btn {
         background-position: right 10px top 4px;
         margin-bottom: 140px;
     }
+	
+	
+  /*10-08-2021*/
+  .left-side-list .top-bnr img {
+    max-width: 569px;
+  }
+  .list-box p {
+    margin-left: 0px;
 }
+.left-cort {
+    float: left;
+    margin-left: 230px;
+}
+ .fifth-logo {
+    margin-left: 20px;
+}
+.sixth-logo {
+    margin-left: 35px;
+}
+  .pantlies p {
+    margin-left: 274px;
+   
+}
+	
+	
 @media (max-width: 1151.98px) {
   header .menu ul li#mega-menu-item-17 {
     padding-left: 30px !important;
@@ -2740,7 +2614,39 @@ a.bok-demo-btn {
     .features-heading h1 {
         font-size: 25px;
     }
+    
+    /*10-08-2021*/
+  .left-side-list .top-bnr img {
+    max-width: 598px;
+    margin-right: 46px;
+    margin-left: -127px;
 }
+.company-logo img {
+    margin-top: 53px;
+    margin-left: -109px;
+}
+  .list-box p {
+    margin-left: 0px;
+}
+.left-cort {
+   
+    float: unset;
+    margin-left: 130px;
+}
+ .fifth-logo {
+    margin-left: 20px;
+}
+.sixth-logo {
+    margin-left: 35px;
+}
+.pantlies p {
+  margin-left: 142px;
+    float: left;
+}
+		
+}
+
+
 @media (max-width: 1023.98px) {
   .free-trail .project-software .free-trail-btn a {
     font-size: 19px;
@@ -2810,8 +2716,39 @@ a.bok-demo-btn {
     .sol-reports {
         background-size: 40%;
         background-position: right top 43px;
-    }
+    
+	}
+	
+    
+    /*10-8-2021*/
+  
+ .forth-logo img{
+  max-width: 100px;
 }
+.white-logo {
+ margin-left: unset;
+}
+.left-cort {
+   margin-left: unset;
+    float: right;
+}
+.fist-pargraf .mgt-para p {
+    margin-top: 20px;
+    padding-right: 108px;
+    padding-right: unset;
+}
+.fist-pargraf .last-para p {
+    margin-right: unset;
+    margin-bottom: 150px;
+    }
+    .compny-paragraph {
+   margin-left: unset;
+        
+    }
+
+	
+
+
 @media (max-width: 991.98px) {
   #mega-menu-wrap-primary .mega-toggle-animated {
     margin-top: 10px !important;
@@ -3361,6 +3298,65 @@ section img {
 .profile-section h6 {
     margin-left: 37px;
 }
+/*10-11-2021**/
+
+.left-side-list .top-bnr img {
+     margin-left: -171px;
+     max-width: 500px;
+}
+.list-box p {
+    margin-left: -72px;
+}
+.first-logo {
+    margin-top: 17px;
+    
+}
+.box-color P {
+    margin-left: -56px;
+}
+.white-logo {
+    
+    margin-top: -28px;
+}
+.box-color P {
+    line-height: unset;
+    }
+    .list-box p {
+   line-height: unset;
+}
+.pantlies p {
+ margin-left: unset;
+}
+.compny-paragraph {
+    margin-left: -135px;
+}
+right-cort {
+    margin-top: 0px;
+    float: left;
+}
+.right-cort {
+   margin-left: -154px;
+}
+.fist-pargraf .mgt-para p {
+     margin-left: -144px;
+}
+section img {
+    margin-left: -148px;
+}
+.fist-pargraf .last-para p {
+    margin-left: -148px;
+}
+section img {
+    margin-left: -148px;
+    margin-left:unset;
+}
+.three-images {
+    margin-left: -161px;
+}
+.customer-post {
+    margin-top: 70px;
+    
+}
 }
 
 @media (max-width: 767.98px) {
@@ -3601,7 +3597,7 @@ section img {
     width: 90%;
   }
   .easa-guide .box a {
-    font-size: 18px;
+    font-size: 16px;
   }
   .price-banner .price-para span {
     font-size: 18px;
@@ -3862,8 +3858,35 @@ section img {
     font-size: 16px;
 }
     
+ /*10-11-2021**/   
+ .left-heading {
+   margin-top: unset;
+}
+.main-list-box {
+  margin-left: -146px;
+}
+  .list-box p {
+    margin-left: 43px;
+}  
+.second-logo {
+   margin-top: unset;
+}
+.left-side-list .top-bnr img {
+   float: right;
+    margin-right: 25px;
+    margin-left: unset;
+}
+.box-color P {
+    margin-left: 25px;
+}
+.image-spacing {
+    margin-left: unset;
     
-    
+}
+.three-images {
+    margin-left: -112px;
+}
+
 }
 @media (max-width: 575.98px) {
   .covid .text {
@@ -3981,6 +4004,14 @@ section img {
   .help-center .box p {
     padding: 0 15px;
   }
+	.easa-guide .box a {
+    font-size: 14px;
+}
+	
+	.box.fq-tail {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
   .price-banner .price-para span {
     font-family: "Montserrat-Semibold";
     font-size: 15px;
@@ -4208,6 +4239,31 @@ section img {
     .reports-section-technicians p {
         margin-bottom: 160px;
     }
+    /*10-11-2021*/
+    .left-side-list .top-bnr img {
+   margin-right: -8px;
+   max-width:390px;
+   margin-top: -54px;
+    }
+    .left-cort {
+        float: unset;
+        }
+   .pantlies p {
+    margin-left: -102px;
+       
+   }    
+   .company-logo img {
+       margin-left: -60px;
+       
+   }
+  .three-images {
+    margin-left: -161px;
+}
+.left-heading h3 {
+   margin-top: 35px;
+}
+
+  
 }
 
 @media (max-width: 413.98px) {
@@ -4399,6 +4455,30 @@ section img {
     .sol-section-4 {
         padding: 80px 30px 20px 0px;
     }
+    /*10-11-2021**/
+    .left-side-list .top-bnr img {
+    margin-right: -11px;
+    max-width: 356px;
+    margin-top: -54px;
+}
+.list-box p {
+    margin-left: 20px;
+    }
+    .box-color P {
+    margin-left: 19px;
+}
+.left-para {
+    padding-right: 30px;
+    margin-left: 16px;
+    }
+	.easa-guide .box a {
+    font-size: 14px;
+		text-align:center;
+}
+	.box.fq-tail {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
 }
 @media (max-width: 374.98px) {
   /* For 360 */
@@ -4522,6 +4602,17 @@ section img {
     line-height: 30px;
     font-size: 18px;
   }
+  .left-side-list .top-bnr img {
+      max-width: 341px;
+  }
+		.easa-guide .box a {
+    font-size: 15px;
+		text-align:center;
+}
+	.box.fq-tail {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
 }
 @media (max-width: 359.98px) {
   .testimonials h1 {
@@ -4645,4 +4736,129 @@ section img {
         font-size: 24px;
         margin-left: 4px;
     }
+	.easa-guide .box a {
+    font-size: 15px;
+		text-align:center;
 }
+	.box.fq-tail {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+}
+/*responsive faq list*/
+@media(max-width:1151px){
+	
+	.flex img{
+	margin-top:0;
+	position:absolute;
+	right:8px;
+	} 
+}
+ @media(max-width:1084px)
+ {
+	.flex img{
+	margin-top:5%;
+	position:absolute;
+	right:8px;
+	} 
+}
+ @media(max-width:1023px)
+ {
+	.flex img{
+	margin-top:7%;
+	position:absolute;
+    right:5px;
+	} 
+	 
+}
+
+   @media(max-width:991.98px){
+	   
+	.list-box p, .faq-box p{
+	 font-size: 20px;
+	padding-top:1rem;
+}
+
+.faq-box .divider {
+  width: 95%;
+  height: 2px;
+  
+}
+	   .faq-box h4{
+	font-size:20px;
+	
+}
+
+.list-box h4{
+	font-size:20px;
+ 
+} 
+	   .flex img{
+		   margin-left:-20px;
+		   margin-top:5%;
+	   }
+}
+ @media(max-width:920px){
+	   
+	.list-box p, .faq-box p{
+	 font-size: 20px;
+	padding-top:1rem;
+}
+.faq-box .divider {
+  width: 95%;
+  height: 2px;
+  
+}
+	 .faq-box h4{
+	font-size:19px;
+	
+}
+
+.list-box h4{
+	font-size:19px;
+ 
+} 
+	   .flex img{
+		   margin-left:-20px;
+		   margin-top:15px;
+		   position:absolute;
+	   }
+}
+@media(max-width:867.98px){
+	.flex img{
+		   margin-left:-20px;
+		   margin-top:17%;
+		   position:absolute;
+	   }
+	
+	   .faq-box h4{
+	font-size:22px;
+	
+}
+	.box-list h4{
+		font-size:22px;
+	}
+}
+   @media(max-width:767.98px){
+	  .flex img{
+		  display:none; 
+		}
+	   .box-list{
+		 margin-bottom:-3%;
+	   }
+	   	.box-list p, .faq-box p{
+	 font-size:20px;
+	padding-top:0rem;
+}
+}
+@media(max-width:576px){
+	   	.box-list p, .faq-box p{
+	 font-size:17.5px;
+	padding-top:0rem;
+}
+	
+}
+/*responsive faq list end*/
+
+
+

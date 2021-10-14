@@ -22,25 +22,33 @@ Template Name: Solution
 
 <section class="sol-section-2">
 
-	<div class="container">
-		<div class="row">
+    <div class="container">
+        <div class="row justify-content-center">
 
-			<div class="col-md-6  category-image">
-				<img src="<?php the_field('categgories_status_image'); ?>">
+            <div class="col-md-6  category-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sol-categories-img.jpg">
+                <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/catogery-hook-logo.png"> -->
+            </div>
 
-			</div>
-
-			<div class="col-md-6  category-section">
-				<div class="logoss">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png">
-					<P><?php the_field('categgories_status_subheading'); ?></P>
-				</div>
-				    <?php the_field('categgories_status_text'); ?>
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/why-text-image.png">
-			</div>
-		</div>
-	</div>
-	</div>
+            <div class="col-md-6  category-section">
+                <div class="logoss">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png">
+                    <P>Skyhook Experience</P>
+                </div>
+                <h1>Categgories Status Dashboard</1h>
+                    <p>When a technician logs into skyhook.is he sees the dashboard. The dashboard gives him an overview
+                        of the whole system. There the technician can see his categories status, his statistic and most
+                        recent experience entries. The categories status is a visual representation of the logbook
+                        status. In the pic-ture blow the category status is on top of the screenshot. Here Adam Is
+                        logging experience on category B1, group 1 (the group number is inside the blue cogwheel). His
+                        status is
+                        100%. That means that he is current in accordance with EASA regulations.
+                        Technicians can log experience on as many categories and groups as needed</p>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/why-text-image.png">
+            </div>
+        </div>
+    </div>
+    </div>
 </section>
 <!---------------------------------------------- solution gategory  section-2  end ---------------------------->
 
@@ -48,61 +56,73 @@ Template Name: Solution
 
 <section class="sol-section-3">
 
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-6 experience-section logos">
-				<h5>
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png"><?php the_field('experience_logobook_subheading');?>
-				</h5>
-				<?php the_field('experience_logobook_text');?>
-			</div>
-			<div class="col-md-6  experience-image"> 
-			    <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sol-experience-image.jpg">-->
-                <img src="<?php the_field('experience_logobooks_image');?>">
-			</div>
-				<div class="row list-section">
-                    <div class="col-md-7 listing-color">
-						<ul>
-							<li>Aircraft Registration Number</li>
-							<li>Choose from list or add new</li>
-							<li>Type of Maintenance</li>
-							<li>Base or line</li>
-							<li>Type of Activity</li>
-							<li>Performed, supervised, released or training</li>
-							<li>Categories</li>
-							<li>All EASA categories (A, B1, B2 etc.)</li>
-							<li>ATA Chapters</li>
-							<li>List of all needed ATA chapters</li>
-							<li>Duration in Hours</li>
-							<li>Break down the experience into hours</li>
-							<li>Text field </li>
-							<li> Add additional text information</li>
-						</ul>
-						<h6>Optional fields that are not noted in EASA’s regulations are:</h6>
-						<ul>
-							<li>Airline </li>
-							<li>Choose from list or add new</li>
-							<li>Job, Wo, Log page Nr.</li>
-							<li>Number of job/wo/log page</li>
-							<li>145 Approval Nr.</li>
-							<li>Number of Approval</li>
-							<li>Supervisor</li>
-							<li>Choose from list or add new</li>
-							<li>Attached files </li>
-							<li> Dirty fingerprints upload (WO, task card, LP, ...)</li>
-						</ul>
-						<div class="second-list">
-						    
-						</div>
-					</div>
-					<div class="col-md-5  experience-image ex-secon-img">
-			            <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sol-experience-image.jpg">-->
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logbook-2.png">
-		        	</div>
-			</div>
-		
-		</div>
-	</div>
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-md-6 experience-section logos">
+                <h5>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png">Skyhook Expereince
+                </h5>
+                <h1>Experience Logobook</h1>
+                <p>To log experience you go to the experience page and press add entry. Then the log experience pops up.
+                </p>
+                <p>The logbook is based on EASA regulations (66.A.20(b)2). Managers can then select which fields are
+                    mandatory and which fields are optional.</p>
+                <h6>Main fields of the experience logbook are:</h6>
+                <div class="row">
+
+                    <div class="col-md-6 listing-color">
+                        <ul>
+                            <li>Aircraft Registration Number
+                            </li>
+                            <li>Type of Maintenance</li>
+                            <li>Type of Activity</li>
+                            <li>Categories</li>
+                            <li>ATA Chapters</li>
+                            <li>Duration in Hours</li>
+                            <li>Text field </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 listing-part2">
+                        <ul>
+                            <li>Choose from list or add new</li>
+                            <li>Base or line</li>
+                            <li>Performed, supervised, released or training</li>
+                            <li>All EASA categories (A, B1, B2 etc.)</li>
+                            <li>List of all needed ATA chapters</li>
+                            <li>Break down the experience into hours</li>
+                            <li> Add additional text information</li>
+                        </ul>
+                    </div>
+                </div>
+                <h6>Optional fields that are not noted in EASA’s regulations are:</h6>
+                <div class="row">
+                    <div class="col-md-6 listing-color">
+                        <ul>
+                            <li>Airline </li>
+                            <li>Job, Wo, Log page Nr.</li>
+                            <li>145 Approval Nr.</li>
+                            <li>Supervisor</li>
+                            <li>Attached files </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 listing-part2">
+                        <ul>
+                            <li>Choose from list or add new</li>
+                            <li>Number of job/wo/log page</li>
+                            <li>Number of Approval</li>
+                            <li>Choose from list or add new</li>
+                            <li> Dirty fingerprints upload (WO, task card, LP, ...)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6  experience-image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sol-experience-image.jpg">
+
+            </div>
+        </div>
+    </div>
 
 
 </section>
