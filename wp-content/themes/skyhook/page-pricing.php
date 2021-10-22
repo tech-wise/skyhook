@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 page-heading">
-                <h1>Pricing</h1>
+                <h1><?php the_title();?></h1>
             </div>
             <div class="col-md-8 price-nav-tab">
                 <div class="row">
@@ -36,28 +36,20 @@
             <div class="card-div free col-md-4">
                 <div class="card1">
                     <div class="access-div">
-                        <h5>FREE</h5>
-                        <p>Contractor access</p>
+                        <h5><?php the_field('free_package');?></h5>
+                        <p><?php the_field('free_package_subheading');?></p>
                     </div>
                     <div class="card-body">
                         <div class="price-div">
                             <div class="heading-para">
-                                <h5>No monthly base cost</h5>
-                                <p>Limited access only</p>
+                                <h5><?php the_field('free_package_price');?></h5>
+                                <?php the_field('free_package_discount');?>
                             </div>
 
                         </div>
                         <div class="divider"> </div>
                         <div class="list">
-                            <ul>
-                                <li>Experience log book</li>
-                                <li>Basic PDF reports</li>
-                                <li>No training log</li>
-                                <li>No notifications</li>
-                                <li>No e-mail reminders</li>
-                                <li>Limit of 5 new aircraft per month</li>
-                                <li>Limit of 20 entries per month</li>
-                            </ul>
+                           <?php the_field('free_package_list');?>
                         </div>
                         <div class="divider"> </div>
                         <div class="get-button text-center">
@@ -70,23 +62,24 @@
             <div class="card-div premium col-md-4 active">
                 <div class="card1">
                     <div class="access-div">
-                        <h5>PREMIUM</h5>
-                        <p>Contractor access</p>
+                        <h5><?php the_field('premium_package');?></h5>
+                <p><?php the_field('premium_package_subheading');?></p>
                     </div>
                     <div class="card-body">
                         <div class="price-div">
                             <div class="eighty-number">
-                                <h5>180.00</h5>
+<!--                                 <h5>180.00</h5>
                                 <p>€ / year (17% discount)</p>
-                                <p>18.00€ / Monthly</p>
+                                <p>18.00€ / Monthly</p> -->
+								<?php the_field('premium_package_price');?>
                             </div>
                             <div class="heading-para">
-                                <p>Great value!</p>
+                                <p><?php the_field('premium_package_discount');?></p>
                             </div>
                         </div>
                         <div class="divider"> </div>
                         <div class="list">
-                            <ul>
+<!--                             <ul>
                                 <li>Limitless experience log book</li>
                                 <li>Powerful PDF reports</li>
                                 <li>Continuous requirements training log</li>
@@ -94,7 +87,8 @@
                                 <li>E-mail reminders</li>
                                 <li>No limit on saved aircraft</li>
                                 <li>No limit on entries</li>
-                            </ul>
+                            </ul> -->
+							<?php the_field('premium_package_list');?>
                         </div>
                         <div class="divider"> </div>
                         <div class="get-button text-center">
@@ -107,30 +101,31 @@
             <div class="card-div business col-md-4">
                 <div class="card1">
                     <div class="access-div">
-                        <h5>BUSINESS</h5>
-                        <p>With Employee access</p>
+                        <h5><?php the_field('business_package');?></h5>
+                        <p><?php the_field('business_package_subheading');?></p>
                     </div>
                     <div class="card-body">
                         <div class="price-div">
                             <div class="heading-para">
-                                <h5>How big is your company?</h5>
-                                <p>We give great offers</p>
+                               <?php the_field('business_package_descount');?>
                             </div>
                             <div class="estimate">
                                 <div class="row">
                                     <div class="col-md-8 col-8 estimate-name">
-                                        <p>Get an Estimate</p>
+                                        <p><?php the_field('business_package_estimate_time_');?></p>
                                     </div>
                                     <div class="col-md-4 col-4 estimate-price estimate-price1">
-                                        <p id="slider_value1">180.00</p><span>€ / month</span>
+                                        <p id="slider_value1"><?php the_field('business_package_estimate_time__price');?></p>
+<!-- 										<span>€ / month</span> -->
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-8 col-8 estimate-name">
-                                        <p>Number of employees</p>
+                                        <p><?php the_field('business_package_employ_text');?></p>
                                     </div>
                                     <div class="col-md-4 col-4 estimate-price estimate-price2">
-                                        <p id="slider_value">10</p><span>access</span>
+                                        <p id="slider_value"><?php the_field('business_package_employ_number');?></p>
+<!-- 										<span>access</span> -->
                                     </div>
                                 </div>
                                 <div class="row progressbar">
@@ -142,7 +137,8 @@
                         </div>
                         <div class="divider"> </div>
                         <div class="list">
-                            <ul>
+							<?php the_field('business_package_list');?>
+<!--                             <ul>
                                 <li>Full supervisor access</li>
                                 <li>Full premium features for employees</li>
                                 <li>Experience log reports</li>
@@ -150,7 +146,7 @@
                                 <li>Notifications and e-mail reminders</li>
                                 <li>No limit on saved aircraft</li>
                                 <li>No limit on entries</li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <div class="divider"> </div>
                         <div class="get-button text-center">
@@ -163,12 +159,7 @@
         </div>
         <div class="row">
             <div class="col-xl-10 col-md-11 col-11 not-lose">
-                <p>
-                    * You get access to all features for the duration of your subscription.
-                    When the subscription is canceled you will
-                    <span>not lose your data,</span> only access to it.
-                    You can reactivate any of your subscriptions at any time.
-                </p>
+				<?php the_field('package_notes');?>
             </div>
         </div>
     </div>
@@ -185,30 +176,38 @@
                     <div class="col-md-12 heading">
                         <h1>Questions & Answers before buying</h1>
                     </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Article help center</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Custom Bots</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Reporting</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Commitment</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Payment Do You Accept</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Support Opations</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                            <a href="#">Owns My Data</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                            <a href="#">Free Trial Work</a>
-                    </div>
+                    
+                    <?php 
+                        $categories = get_categories();
+                        foreach($categories as $category) {
+                           echo '<div class="col-md-3 box fq-tail"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
+                        }
+                    ?>
+
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Article help center</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Custom Bots</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Reporting</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Commitment</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Payment Do You Accept</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Support Opations</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--        <a href="#">Owns My Data</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--        <a href="#">Free Trial Work</a>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>

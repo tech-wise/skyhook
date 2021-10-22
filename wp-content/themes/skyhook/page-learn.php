@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 page-heading">
-					<h1>Learn</h1>
+					<h1><?php the_title();?></h1>
 				</div>
 			</div>
 		</div>
@@ -21,56 +21,38 @@
 				</div>
 				<div class="col-md-4 text-center">
 					<div class="box box-1">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/box-1.png">
-						<h4>Getting Started</h4>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
+						<img src="<?php the_field('help_center_box_1_image');?>">
+						<?php the_field('help_center_box_1_text');?>
 					</div>
 				</div>
 				<div class="col-md-4 text-center">
 					<div class="box box-2">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/box-2.png">
-						<h4>Community</h4>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
+						<img src="<?php the_field('help_center_box_2_image');?>">
+						<?php the_field('help_center_box_2_text');?>
 					</div>
 				</div>
 				<div class="col-md-4 text-center">
 					<div class="box box-3">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/box-3.png">
-						<h4>Troubleshooting</h4>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
+						<img src="<?php the_field('help_center_box_3_image');?>">
+						<?php the_field('help_center_box_3_text');?>
 					</div>
 				</div>
 				<div class="col-md-4 text-center">
 					<div class="box box-4">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/box-4.png">
-						<h4>Webinars</h4>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
+						<img src="<?php the_field('help_center_box_4_image');?>">
+						<?php the_field('help_center_box_4_text');?>
 					</div>
 				</div>
 				<div class="col-md-4 text-center">
 					<div class="box box-5">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/box-5.png">
-						<h4>Professional Servics</h4>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
+						<img src="<?php the_field('help_center_box_5_image');?>">
+						<?php the_field('help_center_box_5_text');?>
 					</div>
 				</div>
 				<div class="col-md-4 text-center">
 					<div class="box box-6">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/box-6.png">
-						<h4>Idea Submission</h4>
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-						</p>
+						<img src="<?php the_field('help_center_box_6_image');?>">
+						<?php the_field('help_center_box_6_text');?>
 					</div>
 				</div>
 			</div>
@@ -84,16 +66,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 work-text skyhook-primary-button skyhook-primary-para">
-					<h5><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png"> Work with Skyhook</h5>
-					<h1>Why Skyhook?</h1>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<h5><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/small-logo.png"> <?php the_field('why_skyook_subheading');?></h5>
+					<?php the_field('why_skyook_text');?>
 					<a href="#">Learn More</a>
 					<div class="text-img">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/why-text-image.png">
+						<img src="<?php the_field('why_skyook_image');?>">
 					</div>
 				</div>
 				<div class="col-md-6 work-img">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/why-image.png">
+					<img src="<?php the_field('why_skyook_image_2');?>">
 				</div>
 			</div>
 		</div>

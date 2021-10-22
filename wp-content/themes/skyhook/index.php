@@ -207,30 +207,21 @@
 	</section>
 	<!-- About Section End -->
 
+
 	<!-- Testimonials Section Start -->
 	<section class="testimonials">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-9 col-md-11 text-center">
 					<h1>What Our Customers Say!</h1>
-					<div id="testmonialsControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+					<div id="testmonialsControls" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#testmonialsControls" data-slide-to="0" class="active"></li>
 							<li data-target="#testmonialsControls" data-slide-to="1"></li>
 							<li data-target="#testmonialsControls" data-slide-to="2"></li>
 						</ol>
 						<div class="carousel-inner">
-					    <?php   
-					        $args = array(
-					        'post_type' => 'customer_review',
-					        'post_status' =>'publish',
-					        'post_per_page' => -1,
-					        'order' => 'ASC',
-					        );
-					        
-					       $loop = new WP_Query($args);
-					       while($loop->have_posts()) : $loop->the_post();  ?>
-                            <div class="carousel-item active">
+							<div class="carousel-item active">
 								<div class="slider">
 									<div class="row">
 										<div class="col-md-4 customer-img d-none d-md-block">
@@ -264,17 +255,81 @@
 									</div>
 								</div>
 							</div>
-                       
-                        <?php endwhile; 
-                        wp_reset_postdata(); ?>
-						<a class="carousel-control-prev" href="#testmonialsControls" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/left-side.png"></span>
-						</a>
-						<a class="carousel-control-next" href="#testmonialsControls" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/right-side.png"></span>
-						</a>
+							<div class="carousel-item">
+								<div class="slider">
+									<div class="row">
+										<div class="col-md-4 customer-img d-none d-md-block">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">
+										</div>
+										<div class="col-md-8 customer-text">
+											<p>Gone are the days when I’m left feeling that my technicians are not keeping their recent experience records up to date. mymxlog isn't just simple, it's super fun, and makes managing continuous training requirements an absolute breeze.</p>
+											<div class="row">
+												<div class="col-md-8 col-9 customer-name d-none d-md-block">
+													<h5>Eðvald Line Maintenance</h5>
+													<p>Manager</p>
+												</div>
+												<div class="col-md-4 col-3 logo d-none d-md-block">
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">
+												</div>
+											</div>
+										</div>
+										<div class="col-12 d-md-none">
+											<div class="row">
+												<div class="col-6 customer-img">
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">
+												</div>
+												<div class="col-6 customer-name logo">
+													<h5>Eðvald Line Maintenance</h5>
+													<p>Manager</p>
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="slider">
+									<div class="row">
+										<div class="col-md-4 customer-img d-none d-md-block">
+											<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">
+										</div>
+										<div class="col-md-8 customer-text">
+											<p>Gone are the days when I’m left feeling that my technicians are not keeping their recent experience records up to date. mymxlog isn't just simple, it's super fun, and makes managing continuous training requirements an absolute breeze.</p>
+											<div class="row">
+												<div class="col-md-8 col-9 customer-name d-none d-md-block">
+													<h5>Eðvald Line Maintenance</h5>
+													<p>Manager</p>
+												</div>
+												<div class="col-md-4 col-3 logo d-none d-md-block">
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">
+												</div>
+											</div>
+										</div>
+										<div class="col-12 d-md-none">
+											<div class="row">
+												<div class="col-6 customer-img">
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">
+												</div>
+												<div class="col-6 customer-name logo">
+													<h5>Eðvald Line Maintenance</h5>
+													<p>Manager</p>
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--<a class="carousel-control-prev" href="#testmonialsControls" role="button" data-slide="prev">-->
+						<!--	<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+						<!--	<span class="sr-only"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/left-side.png"></span>-->
+						<!--</a>-->
+						<!--<a class="carousel-control-next" href="#testmonialsControls" role="button" data-slide="next">-->
+						<!--	<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+						<!--	<span class="sr-only"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/right-side.png"></span>-->
+						<!--</a>-->
 
 					</div>
 				</div>
