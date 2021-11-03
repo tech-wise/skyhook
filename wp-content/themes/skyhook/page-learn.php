@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
 <!-- Learn Banner Start -->
 	<section class="learn-banner">
 		<div class="container">
@@ -88,38 +89,74 @@
 				<div class="col-md-12 text-center heading">
 					<h2>Customer Stories</h2>
 				</div>
-				<div class="col-md-4 stories">
-					<div class="stories-box">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-1.png" />
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
-					</div>
-					<div class="stories-box">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-4.png" />
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-					</div>
-				</div>
-				<div class="col-md-4 stories">
-					<div class="stories-box">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-2.png" />
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-					</div>
-					<div class="stories-box">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-5.png" />
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
-					</div>
-				</div>
-				<div class="col-md-4 stories">
-					<div class="stories-box">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-3.png" />
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					</div>
-					<div class="stories-box">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-6.png" />
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-					</div>
-				</div>
+				<!--loop start-->
+				<?php
+				    $args = array(
+				        'post_type' => 'customerstorie',
+				        'post_status' => 'publish',
+				        'posts_per_page' => '-1',
+				        'order' => 'ASC',
+				    
+				    );
+				    $count=0;
+				    $loop = new WP_Query($args);
+				    while($loop->have_posts()): $loop->the_post(); ?>
+				    <?php if($count%2==0){ ?>
+				    <div class="col-md-4 stories">
+				        <a href="<?php echo get_permalink()?>">
+    					<div class="stories-box">
+    						<?php the_post_thumbnail(); ?>
+    						<?php the_content(); ?>
+    					</div>
+    					</a>
+    				<?php $count++;} else{?>
+    				<a href="<?php echo get_permalink()?>">
+    				<div class="stories-box">
+    						 <?php the_post_thumbnail(); ?>
+    						 <?php the_content(); ?>
+    					</div>
+				    </div>
+				    </a>
+    				
+				<?php  $count++; } 
+				    endwhile;
+				    wp_reset_postdata();
+				?>
+				<!--loop end-->
+				
+				
+				<!--<div class="col-md-4 stories">-->
+				<!--	<div class="stories-box">-->
+				<!--		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-1.png" />-->
+				<!--		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>-->
+				<!--	</div>-->
+				<!--	<div class="stories-box">-->
+				<!--		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-4.png" />-->
+				<!--		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>-->
+				<!--	</div>-->
+				<!--</div>-->
+				<!--<div class="col-md-4 stories">-->
+				<!--	<div class="stories-box">-->
+				<!--		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-2.png" />-->
+				<!--		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>-->
+				<!--	</div>-->
+				<!--	<div class="stories-box">-->
+				<!--		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-5.png" />-->
+				<!--		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>-->
+				<!--	</div>-->
+				<!--</div>-->
+				<!--<div class="col-md-4 stories">-->
+				<!--	<div class="stories-box">-->
+				<!--		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-3.png" />-->
+				<!--		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>-->
+				<!--	</div>-->
+				<!--	<div class="stories-box">-->
+				<!--		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stories-6.png" />-->
+				<!--		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>-->
+				<!--	</div>-->
+				<!--</div>-->
 				<div class="col-md-12 text-center stories-btn skyhook-primary-button">
-					<a href="#">More Customer Stories</a>
+					<a href="https://technologywisdom.com/devp/wp-skyhook/customerstorie/iberia/">More Customer Stories</a>
 				</div>
 			</div>
 		</div>
@@ -135,30 +172,38 @@
                     <div class="col-md-12 heading">
                         <h1>Questions & Answers before buying</h1>
                     </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Article help center</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Custom Bots</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Reporting</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Commitment</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Payment Do You Accept</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                        <a href="#">Support Opations</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                            <a href="#">Owns My Data</a>
-                    </div>
-                    <div class="col-md-3 box fq-tail">
-                            <a href="#">Free Trial Work</a>
-                    </div>
+                    
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Article help center</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Custom Bots</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Reporting</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Commitment</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Payment Do You Accept</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--    <a href="#">Support Opations</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--        <a href="#">Owns My Data</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 box fq-tail">-->
+                    <!--        <a href="#">Free Trial Work</a>-->
+                    <!--</div>-->
+                    <?php 
+                        $categories = get_categories();
+                        foreach($categories as $category) {
+                           echo '<div class="col-md-3 box fq-tail"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
+                        }
+                    ?>
+                    
                 </div>
             </div>
         </div>

@@ -205,36 +205,34 @@ Template Name: Solution
 
 <!-- About Section-9 Start -->
 <section class="about">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-12 about-text text-md-center">
-				<h1>About Skyhook</h1>
-				<p class="about-mobile">Skyhook.is is a service that enables you to manage all your recent aviation
-					experience, continuous requirements,
-					licenses, certificates and much more. Their service also allows you to produce professional reports
-					easily.
-					Skyhook.is was founded in 2010, but the idea initially began in 2008 when they noticed the lack of a
-					good online
-					solution for thenewly established EASA regulations in regards to individual requirements for
-					Aviation Technicians
-					and their licenses. They launched in June 2011.</p>
-				<!--<div class="about-mobile">-->
-				<!--	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aboutt-girl-mob.png">-->
-				<!--</div>-->
-			</div>
-			<div class="col-lg-8 col-md-11 text-center about-video">
-				<!--<iframe src="https://www.youtube.com/embed/EngW7tLk6R8"></iframe>-->
-				<iframe src="https://player.vimeo.com/video/347119375?h=1699409fe2&color=ef2200&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<div class="col-md-12 text-center about-btn">
-				<a href="#">Start Free Trial</a>
-				<div class="about-img about-desktop">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/about-img.png">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12 about-text text-md-center">
+				    <?php the_field('about_skyhook',57); ?>
+					<!--<h1>About Skyhook</h1>-->
+					<!--<p class="about-mobile">Skyhook.is is a service that enables you to manage all your recent aviation experience, continuous requirements, -->
+					<!--licenses, certificates and much more. Their service also allows you to produce professional reports easily. -->
+					<!--Skyhook.is was founded in 2010, but the idea initially began in 2008 when they noticed the lack of a good online -->
+					<!--solution for thenewly established EASA regulations in regards to individual requirements for Aviation Technicians -->
+					<!--and their licenses. They launched in June 2011.</p>-->
+					<!--<div class="about-mobile">-->
+					<!--	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aboutt-girl-mob.png">-->
+					<!--</div>-->
+				</div>
+				<div class="col-lg-8 col-md-11 text-center about-video">
+					<!--<iframe src="https://www.youtube.com/embed/EngW7tLk6R8"></iframe>-->
+				<?php the_field('about_skyhook_video',57); ?>
+ 
+				</div>
+				<div class="col-md-12 text-center about-btn">
+					<a href="#">Start Free Trial</a>
+					<div class="about-img about-desktop">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/about-img.png">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 <!-- About Section-9 End -->
 
 <!--solution reports  section-10  start -->

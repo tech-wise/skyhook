@@ -15,10 +15,10 @@
                     </div>
                     <div class="col-md-9 price-tab">
                         <ul>
-                            <li><a href="#">GB<span> £GBP</span></a></li>
-                            <li class="active EUR"><a href="#">EU<span> €EUR</span></a></li>
-                            <li><a href="#">US<span> $USD</span></a></li>
-                            <li><a href="#">CA<span> $CAD</span></a></li>
+                            <li id="b-1" class="price-gbp-tab">GB<span> £GBP</span></li>
+                            <li id="b-2" class="active EUR price-gbp-tab">EU<span> €EUR</span></li>
+                            <li id="b-3" class="price-gbp-tab price-gbp-tab">US<span> $USD</span></li>
+                            <li id="b-4" class="price-gbp-tab">CA<span> $CAD</span></li>
                         </ul>
                     </div>
                 </div>
@@ -71,7 +71,10 @@
 <!--                                 <h5>180.00</h5>
                                 <p>€ / year (17% discount)</p>
                                 <p>18.00€ / Monthly</p> -->
-								<?php the_field('premium_package_price');?>
+                            <span id=price-b-1 class="premium-price"><?php the_field('premium_gbp_price');?></span>
+							<span id=price-b-2 class="premium-price active"><?php the_field('premium_package_price');?></span>
+							<span id=price-b-3 class="premium-price"><?php the_field('premium_usd_price');?></span>
+							<span id=price-b-4 class="premium-price"><?php the_field('premium_cad_price');?></span>
                             </div>
                             <div class="heading-para">
                                 <p><?php the_field('premium_package_discount');?></p>
@@ -79,15 +82,7 @@
                         </div>
                         <div class="divider"> </div>
                         <div class="list">
-<!--                             <ul>
-                                <li>Limitless experience log book</li>
-                                <li>Powerful PDF reports</li>
-                                <li>Continuous requirements training log</li>
-                                <li>Training and license notifications</li>
-                                <li>E-mail reminders</li>
-                                <li>No limit on saved aircraft</li>
-                                <li>No limit on entries</li>
-                            </ul> -->
+
 							<?php the_field('premium_package_list');?>
                         </div>
                         <div class="divider"> </div>
@@ -112,25 +107,48 @@
                             <div class="estimate">
                                 <div class="row">
                                     <div class="col-md-8 col-8 estimate-name">
-                                        <p><?php the_field('business_package_estimate_time_');?></p>
+                                        <p><?php the_field('business_package_estimate_time_'); ?></p>
                                     </div>
                                     <div class="col-md-4 col-4 estimate-price estimate-price1">
-                                        <p id="slider_value1"><?php the_field('business_package_estimate_time__price');?></p>
-<!-- 										<span>€ / month</span> -->
+                                        <!--price permont start-->
+                                            <p id="slider-b-1" class="business-price"><?php the_field('1_employ_gbp_monthly_price'); ?></p>
+                                            <span id="subheading-b-1" class="business-price"><?php the_field('1_employ_gbp_monthly_price_text');?></span>
+                                            
+                                            <p id="slider-b-2" class="business-price active"><?php the_field('1_employ_eur_monthly_price'); ?></p>
+                                            <span id="subheading-b-2" class="business-price active"><?php the_field('business_package_currency_type');?></span>
+                                            
+                                            <p id="slider-b-3"class="business-price"><?php the_field('1_employ_usd_monthly_price'); ?></p>
+                                            <span id="subheading-b-3" class="business-price"><?php the_field('1_employ_usd_monthly_price_text');?></span>
+                                            
+                                            <p id="slider-b-4" class="business-price"><?php the_field('1_employ_cad_monthly_price'); ?></p>
+                                            <span id="subheading-b-4" class="business-price"><?php the_field('1_employ_cad_monthly_price_text');?></span>
+                                        <!--price per month end-->
+                                       
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-8 col-8 estimate-name">
-                                        <p><?php the_field('business_package_employ_text');?></p>
+                                        <?php the_field('business_package_employ_text'); ?>
                                     </div>
                                     <div class="col-md-4 col-4 estimate-price estimate-price2">
-                                        <p id="slider_value"><?php the_field('business_package_employ_number');?></p>
-<!-- 										<span>access</span> -->
+                                        <!--NUMBER of employ start-->
+                                            <p id="employ-value-b-1" class="business-employ"><?php the_field('number_of_employ'); ?></p>
+                                            <span id="employ-prise-subheading-b-1" class="business-employ"><?php the_field('gbp_employ_subtext');?></span>
+                                            
+                                            <p id="employ-value-b-2" class="business-employ active"><?php the_field('business_package_employ_number'); ?></p>
+                                            <span id="employ-prise-subheading-b-2" class="business-employ active"><?php the_field('number_of_employ_subheading');?></span>
+                                            
+                                            <p id="employ-value-b-3" class="business-employ"><?php the_field('number_of_employ'); ?></p>
+                                            <span id="employ-prise-subheading-b-3" class="business-employ"><?php the_field('usd_employ_subtext');?></span>
+                                            
+                                            <p id="employ-value-b-4" class="business-employ"><?php the_field('number_of_employ'); ?></p>
+                                            <span id="employ-prise-subheading-b-4" class="business-employ"><?php the_field('cad_employ_subtext');?></span>
+                                        <!--number of employ end-->
                                     </div>
                                 </div>
                                 <div class="row progressbar">
                                     <div class="col-md-12">
-                                        <input type="range" class="styled-slider slider-progress" id="slider" min="0" max="100" value="10" />
+                                        <input type="range" class="styled-slider slider-progress" id="slider" min="0" max="100" value="1" />
                                     </div>
                                 </div>
                             </div>
@@ -138,15 +156,6 @@
                         <div class="divider"> </div>
                         <div class="list">
 							<?php the_field('business_package_list');?>
-<!--                             <ul>
-                                <li>Full supervisor access</li>
-                                <li>Full premium features for employees</li>
-                                <li>Experience log reports</li>
-                                <li>Continuous training reports</li>
-                                <li>Notifications and e-mail reminders</li>
-                                <li>No limit on saved aircraft</li>
-                                <li>No limit on entries</li>
-                            </ul> -->
                         </div>
                         <div class="divider"> </div>
                         <div class="get-button text-center">
@@ -183,31 +192,7 @@
                            echo '<div class="col-md-3 box fq-tail"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
                         }
                     ?>
-
-                    <!--<div class="col-md-3 box fq-tail">-->
-                    <!--    <a href="#">Article help center</a>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-3 box fq-tail">-->
-                    <!--    <a href="#">Custom Bots</a>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-3 box fq-tail">-->
-                    <!--    <a href="#">Reporting</a>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-3 box fq-tail">-->
-                    <!--    <a href="#">Commitment</a>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-3 box fq-tail">-->
-                    <!--    <a href="#">Payment Do You Accept</a>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-3 box fq-tail">-->
-                    <!--    <a href="#">Support Opations</a>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-3 box fq-tail">-->
-                    <!--        <a href="#">Owns My Data</a>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-3 box fq-tail">-->
-                    <!--        <a href="#">Free Trial Work</a>-->
-                    <!--</div>-->
+                    
                 </div>
             </div>
         </div>
@@ -402,20 +387,23 @@
 	<!--	</div>-->
 	<!--</section>-->
 	<!-- FAQs Section End -->
-<section class="get-in-touch pricing">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-5 col-md-6 text">
-                <h1>Get in touch with <span>our friendly team.</span></h1>
-                <p>A wealth of styles and elements makes Ollie perfect for building websites for small, medium and large
-                    businesses.</p>
-            </div>
-            <div class="col-xl-5 col-md-6 form skyhook-primary-button">
-                <?php echo do_shortcode('[contact-form-7 id="6" title="Get in Touch"]'); ?>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section class="get-in-touch pricing">-->
+<!--    <div class="container">-->
+<!--        <div class="row justify-content-center">-->
+<!--            <div class="col-xl-5 col-md-6 text">-->
+<!--                <h1>Get in touch with <span>our friendly team.</span></h1>-->
+<!--                <p>A wealth of styles and elements makes Ollie perfect for building websites for small, medium and large-->
+<!--                    businesses.</p>-->
+<!--            </div>-->
+<!--            <div class="col-xl-5 col-md-6 form skyhook-primary-button">-->
+<!--                <?php echo do_shortcode('[contact-form-7 id="6" title="Get in Touch"]'); ?>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--footer contact form-->
+<?php get_template_part('template-parts/getin-tuch') ?>
 
 
 

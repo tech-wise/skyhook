@@ -18,24 +18,7 @@
 		</div>
 	</section>
 
-	<section class="book-demo">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-xl-4 col-md-5 form-text text-center">
-<!-- 					<h2>Book a Demo</h2>
-					<p>Get a live 1:1 demo and your questions answered with one of our customer champions.</p> -->
-					<?php the_field('form_2_text');?>
-					<div class="form skyhook-primary-button">
-						<?php echo do_shortcode('[contact-form-7 id="25" title="Book a Demo"]'); ?>
-					</div>
-				</div>
-				<div class="col-md-7 form-img">
-<!-- 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/home-banner-img.png"/> -->
-					<?php the_post_thumbnail( );?>
-				</div>
-			</div>
-		</div>
-	</section>
-
+    <!--GET FOOTER foorm -->
+    <?php get_template_part('template-parts/footer-contact-form') ?>
 <?php
 get_footer();

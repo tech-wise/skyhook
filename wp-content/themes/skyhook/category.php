@@ -26,7 +26,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">
-				<h1>Articles Help Center</h1>
+				<h1><?php echo $cat_name ?></h1>
 				   <div class="faq-box">				
 					<!-- for loop start -->
                     <?php    $args = array(
@@ -41,11 +41,12 @@
                         while ( $loop->have_posts() ) : $loop->the_post(); ?>
                             <h4><?php the_title(); ?></h4>
                     	    <p><?php the_content(); ?></p>
+                    	    <div class="divider"> 
+			     </div>
                         <?php endwhile;  
                         wp_reset_postdata(); ?>
                     <!-- for loop end -->
-				 <div class="divider"> 
-			     </div>
+				 
 		     </div>
 		</div>
 			<div class="col-md-4 flex">

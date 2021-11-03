@@ -1772,8 +1772,9 @@ footer .footer-top .info-text p {
 /*solution Page END*/
 
 /*##################################################### customer stories section Start ###############################################*/
+
 .first-logo {
-  margin-top: 60px;
+  margin-top: 45px;
 }
 .second-logo {
   margin-left: 32px;
@@ -1794,8 +1795,8 @@ footer .footer-top .info-text p {
   width: 122px;
   margin-top: 15px;
   margin-left: 0px;
- 
-}
+  margin-bottom: 10px;
+ }
 .fist-pargraf p {
   font-family: "Poppins-Regular";
   font-size: 22px;
@@ -1809,16 +1810,67 @@ footer .footer-top .info-text p {
   margin-left: 39px;
 }
 .pantlies {
-  margin-top: 98px;
+  margin-top: 56px;
   float: right;
 }
 
 .pantlies p {
-  margin-left: 265px;
+  /*margin-left: 265px;*/
   float: left;
   font-size: 18px;
   font-family: "Poppins-Regular";
-  padding-left:5px;
+  margin-left: 165px;
+  margin-top: 80px;
+}
+.pantlies img{
+    margin-top: 82px;
+margin-left: -11px;
+}
+
+.postid-388.logged-in.mega-menu-primary .pantlies img{
+    margin-left: -11px;
+    margin-top: 77px;
+}
+.postid-388.logged-in.mega-menu-primary .pantlies p{
+    margin-left: 110px;
+}
+.postid-388.logged-in.mega-menu-primary .pantlies p img{
+    margin-top: 1px;
+}
+.postid-387.logged-in.mega-menu-primary .pantlies img{
+    margin-left: -19px;
+    margin-top: 77px;
+}
+.postid-387.logged-in.mega-menu-primary .pantlies p{
+    margin-left: 166px;
+}
+.postid-387.logged-in.mega-menu-primary .pantlies p img{
+    margin-top: 1px;
+}
+.postid-383.logged-in.mega-menu-primary .pantlies img{
+     margin-left: 3px;
+    margin-top: 122px;
+}
+.postid-383.logged-in.mega-menu-primary .pantlies  p {
+    margin-left: 166px;
+}
+.postid-383.logged-in.mega-menu-primary .pantlies p img{
+    margin-top: 1px;
+}
+.postid-386.logged-in.mega-menu-primary .pantlies img{
+    margin-top: 76px;
+    margin-left: -31px;
+}
+.postid-386.logged-in.mega-menu-primary .pantlies p {
+    margin-left: 166px;
+}
+.postid-386.logged-in.mega-menu-primary .pantlies p img{
+    margin-top: 1px;
+}
+
+
+.pantlies p img{
+    margin-top: 1px;
 }
 .fist-pargraf .mgt-para p {
   margin-top: 20px;
@@ -1847,12 +1899,11 @@ footer .footer-top .info-text p {
   color: #00628c;
   line-height: 55px;
 }
-.box-color {
+.active-list {
   background-color: #00628c;
-  max-width: 100%;
-  margin-left: 0px;
-  padding-top: 34px;
-  padding-bottom: 24px;
+}
+.list-box.bottom-border.active-list p {
+    color: white;
 }
 
 .box-color P {
@@ -1860,7 +1911,6 @@ footer .footer-top .info-text p {
   line-height: 26px;
   font-family: "Poppins-Regular";
   margin-bottom: 10px;
-  
   color: #fff;
   
 }
@@ -1880,9 +1930,15 @@ footer .footer-top .info-text p {
   margin-top: 40px;
   color: #34536a;
   font-size: 15px;
- 
-
-  
+}
+.list-box .white-image{
+    display:none;
+}
+.list-box.active-list .white-image{
+    display:block;
+}
+.list-box.active-list .color-image{
+    display:none;
 }
 .list-box {
   padding-bottom: 10px;
@@ -1927,10 +1983,16 @@ margin-left: 20px;
   margin-left: -90px;
   margin-left: -28px;
 }
+.color-image {
+    margin-left: 10px;
+}
 /*##################################################### customer stories section  End ###############################################*/
 
 /*mix css start*/
 
+.ata-app{
+    margin:50px auto 150px;
+}
 /** solution start**/
  .reports-section .logo p {
   font-family: "Volte-Regular";
@@ -2092,14 +2154,63 @@ a.bok-demo-btn {
 	margin-top:-7%;
 	position:absolute;
 	
-	}
+}
+.inner-content.general-content p {
+    font-size: 18px;
+}
 /*faq list css end*/
+/*price pkg css start*/
+.premium-price{
+    display:none;   
+}
+.premium-price.active{
+    display:block;
+}
+/*.estimate-price.estimate-price1 p:nth-child(2) {*/
+/*    display: none;*/
+/*}*/
+
+
+.business-price{
+ display:none;   
+}
+.business-price.active{
+    display:block;
+}
+.business-employ{
+ display:none;   
+}
+.business-employ.active{
+    display:block;
+}
+
+.price-banner .price-tab ul li span {
+    font-family: "GalanoGrotesque-Bold";
+    color: #272727 !important;
+    font-size: 19px !important;
+}
+.price-banner .price-tab ul li {
+    text-decoration: none !important;
+    display: block !important;
+    color: #595959 !important;
+    text-align: center !important;
+    padding: 3px 29px !important;
+    font-size: 14px !important;
+    font-family: "GalanoGrotesque-Medium" !important;
+}
+.price-gbp-tab:hover {
+    cursor: context-menu;
+}
+/*price pkg css end*/
+
+
 
 
 /* mix css end */
 
 /*=================================== Media Query start=============== */
 @media (min-width: 1920px) {
+    /* For 1920 */
   .container {
     max-width: 1200px;
   }
@@ -2117,8 +2228,14 @@ a.bok-demo-btn {
   .reports-section h1 {
       margin-left: -7px;
       }
+      /**10-29-2021**/
+      .postid-387.logged-in.mega-menu-primary .pantlies img {
+    margin-left: -19px;
+    margin-top: 41px;
+}
 }
 @media (max-width: 1919.98px) {
+    /* For 1670 */
   .sol-section-1 {
     background-position: top 20px right 90px;
   }
@@ -2143,6 +2260,7 @@ a.bok-demo-btn {
 }
 .pantlies {
    float: unset;
+   margin-top: -43px;
     
 }
 .left-para {
@@ -2152,9 +2270,14 @@ a.bok-demo-btn {
     float: right;
     float: unset;
 }
+/**10-29-2021**/
+.postid-387.logged-in.mega-menu-primary .pantlies img {
+    /*margin-top: 40px;*/
+}
 
 }
 @media (max-width: 1679.98px) {
+    /* For 1560 */
   .solution-banner h1 {
     font-size: 58px;
   }
@@ -2174,8 +2297,11 @@ a.bok-demo-btn {
     float: right;
     float: unset;
 }
+/**10-29-2021*/
+
 }
 @media (max-width: 1559.98px) {
+    /* For 1440 */
   .sol-section-1 {
     background-position: top 20px right 100px;
   }

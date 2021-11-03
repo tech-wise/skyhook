@@ -12,18 +12,17 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-
-	<section class="covid">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center text">
-					<span><?php the_field('top_nav_text', 57); ?></span>
-					<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/close.png"></a>
-				</div>
+<body <?php body_class();?>>
+<section class="covid">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center text">
+				<span><?php the_field('top_nav_text', 57); ?></span>
+				<a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/close.png"></a>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
 	<!-- Header Start -->
 	<header>

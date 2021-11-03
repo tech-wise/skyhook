@@ -49,12 +49,35 @@
 					</h3>
 	                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                       <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                          
+                        <!--<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
+                        <!--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
+                        <!--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+                        <!--<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>-->
+                        <!--<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>-->
+                        <!--<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>-->
+                        
+                        <?php
+                                $counte=0;
+                                $args = array(
+                                    'post_type' => 'customer_review',
+                                    'post_status' => 'publish',
+                                    'posts_per_page' => '-1',
+                                    'orderby' => 'title',
+                                    'order' => 'ASC',
+                                
+                                );
+                                $loop = new WP_Query( $args );
+                                while ( $loop->have_posts() ) : $loop->the_post(); 
+                                if($counte==0){?>
+                                 <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $counte; ?>" class="active"></li>
+                                <?php $counte++;
+                                }else{ ?>
+                                
+                                <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $counte; ?>"></li>
+                                <?php $counte++; } endwhile;
+                                wp_reset_postdata();
+                            ?>
                       </ol>
                     <div class="carousel-inner">
                         
@@ -216,120 +239,173 @@
 					<h1>What Our Customers Say!</h1>
 					<div id="testmonialsControls" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
-							<li data-target="#testmonialsControls" data-slide-to="0" class="active"></li>
-							<li data-target="#testmonialsControls" data-slide-to="1"></li>
-							<li data-target="#testmonialsControls" data-slide-to="2"></li>
+						    <?php
+						    $counte=0;
+						    $args = array(
+						        'post_type' => 'customer_review',
+						        'post_status' => 'publish',
+						        'posts_per_page' => '-1',
+						        'orderby' => 'title',
+						        'order' => 'ASC',
+						    
+						    );
+						    $loop = new WP_Query( $args );
+                            while ( $loop->have_posts() ) : $loop->the_post();  
+						    if($counte==0){?>
+						        <li data-target="#testmonialsControls" data-slide-to="<?php echo $counte;?>" class="active"></li>
+						    <?php $counte++;
+						    }else{ ?>
+						    
+						        <li data-target="#testmonialsControls" data-slide-to="<?php echo $counte;?>"></li>
+						    <?php $counte++; } endwhile;
+						    wp_reset_postdata();
+						    ?>
+						    
+						    
+						    
+							<!--<li data-target="#testmonialsControls" data-slide-to="0" class="active"></li>-->
+							<!--<li data-target="#testmonialsControls" data-slide-to="1"></li>-->
+							<!--<li data-target="#testmonialsControls" data-slide-to="2"></li>-->
 						</ol>
 						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<div class="slider">
-									<div class="row">
-										<div class="col-md-4 customer-img d-none d-md-block">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">
-										</div>
-										<div class="col-md-8 customer-text">
-											<p>Gone are the days when I’m left feeling that my technicians are not keeping their recent experience records up to date. mymxlog isn't just simple, it's super fun, and makes managing continuous training requirements an absolute breeze.</p>
-											<div class="row">
-												<div class="col-md-8 col-9 customer-name d-none d-md-block">
-													<h5>Eðvald Line Maintenance</h5>
-													<p>Manager</p>
-												</div>
-												<div class="col-md-4 col-3 logo d-none d-md-block">
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">
-												</div>
-											</div>
-										</div>
-										<div class="col-12 d-md-none">
-											<div class="row">
-												<div class="col-6 customer-img">
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">
-												</div>
-												<div class="col-6 customer-name logo">
-													<h5>Eðvald Line Maintenance</h5>
-													<p>Manager</p>
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">
-												</div>
-											</div>
-										</div>
-										
-									</div>
-								</div>
-							</div>
+						    <!--sldier 1-->
+						    <?php
+						        $count=0;
+						        $custom_review = array(
+						            'post_type' => 'customer_review',
+						            'post_status' => 'publish',
+						            'posts_per_page' => -1,
+						            'orderby' => 'title',
+						            'order' => 'ABC',
+						        );
+						        $custom =new WP_Query($custom_review);
+						        while($custom->have_posts()): $custom->the_post(); 
+						        if($count==0){ ?>
+						            <div class="carousel-item active">
+								        <div class="slider">
+									        <div class="row">
+        										<div class="col-md-4 customer-img d-none d-md-block">
+        											<?php the_post_thumbnail( );?>
+        										</div>
+        										<div class="col-md-8 customer-text">
+        											<!--<p>'s super fun, and makes managing continuous training requirements an absolute breeze.</p>-->
+        											<?php the_content(); ?>
+        											<div class="row">
+        												<div class="col-md-8 col-9 customer-name d-none d-md-block">
+        													<h5><?php the_title();?></h5>
+        													<p><?php the_field('designation'); ?></p>
+        													
+        												</div>
+        												<div class="col-md-4 col-3 logo d-none d-md-block">
+        													<img src="<?php the_field('customer_company_logo');?>">
+        												</div>
+        											</div>
+        										</div>
+        										<div class="col-12 d-md-none">
+        											<div class="row">
+        												<div class="col-6 customer-img">
+        													<?php the_post_thumbnail(); ?>
+        												</div>
+        												<div class="col-6 customer-name logo">
+        													<h5><?php the_title();?></h5>
+        													<p><?php the_field('designation'); ?></p>
+        													<img src="<?php the_field('customer_company_logo');?>">
+        												</div>
+        											</div>
+        										</div>
+									        </div>
+								        </div>
+							        </div>
+						       <?php $count++;
+						       }else{ ?>
+						            <!--sldier 2-->
 							<div class="carousel-item">
 								<div class="slider">
 									<div class="row">
 										<div class="col-md-4 customer-img d-none d-md-block">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">
+											<?php the_post_thumbnail(); ?>
 										</div>
 										<div class="col-md-8 customer-text">
-											<p>Gone are the days when I’m left feeling that my technicians are not keeping their recent experience records up to date. mymxlog isn't just simple, it's super fun, and makes managing continuous training requirements an absolute breeze.</p>
+												<?php the_content(); ?>
 											<div class="row">
 												<div class="col-md-8 col-9 customer-name d-none d-md-block">
-													<h5>Eðvald Line Maintenance</h5>
-													<p>Manager</p>
+													<h5><?php the_title();?></h5>
+        											<p><?php the_field('designation'); ?></p>
 												</div>
 												<div class="col-md-4 col-3 logo d-none d-md-block">
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">
+													<img src="<?php the_field('customer_company_logo');?>">
 												</div>
 											</div>
 										</div>
 										<div class="col-12 d-md-none">
 											<div class="row">
 												<div class="col-6 customer-img">
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">
+													<?php the_post_thumbnail(); ?>
 												</div>
 												<div class="col-6 customer-name logo">
-													<h5>Eðvald Line Maintenance</h5>
-													<p>Manager</p>
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">
+													<h5><?php the_title();?></h5>
+        											<p><?php the_field('designation'); ?></p>
+													<img src="<?php the_field('customer_company_logo');?>">
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="carousel-item">
-								<div class="slider">
-									<div class="row">
-										<div class="col-md-4 customer-img d-none d-md-block">
-											<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">
-										</div>
-										<div class="col-md-8 customer-text">
-											<p>Gone are the days when I’m left feeling that my technicians are not keeping their recent experience records up to date. mymxlog isn't just simple, it's super fun, and makes managing continuous training requirements an absolute breeze.</p>
-											<div class="row">
-												<div class="col-md-8 col-9 customer-name d-none d-md-block">
-													<h5>Eðvald Line Maintenance</h5>
-													<p>Manager</p>
-												</div>
-												<div class="col-md-4 col-3 logo d-none d-md-block">
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">
-												</div>
-											</div>
-										</div>
-										<div class="col-12 d-md-none">
-											<div class="row">
-												<div class="col-6 customer-img">
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">
-												</div>
-												<div class="col-6 customer-name logo">
-													<h5>Eðvald Line Maintenance</h5>
-													<p>Manager</p>
-													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+						       
+						    
+						    
+						        
+						    <?php  $count++; }  
+						          endwhile;
+						          wp_reset_postdata(); 
+						    ?>
+							
+							
+							<!--sldier 3-->
+							<!--<div class="carousel-item">-->
+							<!--	<div class="slider">-->
+							<!--		<div class="row">-->
+							<!--			<div class="col-md-4 customer-img d-none d-md-block">-->
+							<!--				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">-->
+							<!--			</div>-->
+							<!--			<div class="col-md-8 customer-text">-->
+							<!--				<p>Gone are the days when I’m left feeling that my technicians are not keeping their recent experience records up to date. mymxlog isn't just simple, it's super fun, and makes managing continuous training requirements an absolute breeze.</p>-->
+							<!--				<div class="row">-->
+							<!--					<div class="col-md-8 col-9 customer-name d-none d-md-block">-->
+							<!--						<h5>Eðvald Line Maintenance</h5>-->
+							<!--						<p>Manager</p>-->
+							<!--					</div>-->
+							<!--					<div class="col-md-4 col-3 logo d-none d-md-block">-->
+							<!--						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">-->
+							<!--					</div>-->
+							<!--				</div>-->
+							<!--			</div>-->
+							<!--			<div class="col-12 d-md-none">-->
+							<!--				<div class="row">-->
+							<!--					<div class="col-6 customer-img">-->
+							<!--						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer.png">-->
+							<!--					</div>-->
+							<!--					<div class="col-6 customer-name logo">-->
+							<!--						<h5>Eðvald Line Maintenance</h5>-->
+							<!--						<p>Manager</p>-->
+							<!--						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-logo.png">-->
+							<!--					</div>-->
+							<!--				</div>-->
+							<!--			</div>-->
+							<!--		</div>-->
+							<!--	</div>-->
+							<!--</div>-->
+							<!--slider end-->
 						</div>
-						<!--<a class="carousel-control-prev" href="#testmonialsControls" role="button" data-slide="prev">-->
-						<!--	<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-						<!--	<span class="sr-only"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/left-side.png"></span>-->
-						<!--</a>-->
-						<!--<a class="carousel-control-next" href="#testmonialsControls" role="button" data-slide="next">-->
-						<!--	<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-						<!--	<span class="sr-only"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/right-side.png"></span>-->
-						<!--</a>-->
+						<a class="carousel-control-prev" href="#testmonialsControls" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/left-side.png"></span>
+						</a>
+						<a class="carousel-control-next" href="#testmonialsControls" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/right-side.png"></span>
+						</a>
 
 					</div>
 				</div>
